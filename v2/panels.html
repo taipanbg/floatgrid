@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Panels - FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Panels in FloatGrid. Classes and examples.">
+        <meta name="keywords" content="Panels,FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel=icon href="./favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/floatgrid.css">
+        <link rel="stylesheet" href="./css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="./css/bgrey.css">
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="flexiblebasis" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./getting_started">Getting started</a></li>
+                                <li><a href="./documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="./responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./media_queries">Media Queries</a></li>
+                                                <li><a href="./visibility">Visibility</a></li>
+                                                <li><a href="./fluid">Fluid</a></li>
+                                                <li><a href="./grid">Grid basics</a></li>
+                                                <li><a href="./typography">Typography</a></li>
+                                                <li><a href="./element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./icons">Icons</a></li>
+                                                <li><a href="./forms">Forms</a></li>
+                                                <li><a href="./groups">Groups</a></li>
+                                                <li><a href="./borders">Borders</a></li>
+                                                <li><a href="./chips_badges">Chips and Badges</a></li>
+                                                <li><a href="./thumbnails">Images</a></li>
+                                                <li><a href="./contextual_colors">Contextual colors</a></li>
+                                                <li><a href="./progress">Progress bars</a></li>
+                                                <li><a href="./panels">Panels</a></li>
+                                                <li><a href="./tables">Tables</a></li>
+                                                <li><a href="./tooltip">Tooltip</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="./dividers">Dividers</a></li>
+                                                <li><a href="./clearfix">Clearfix</a></li>
+                                                <li><a href="./float">float</a></li>
+                                                <li><a href="./position">Position</a></li>
+                                                <li><a href="./padding">Padding</a></li>
+                                                <li><a href="./margin">Margin</a></li>
+                                                <li><a href="./vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <section id="schale" class="fc-container">
+            
+                <section id="wrapper" class="fl-container-box16">
+            
+                    <section id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Panels</h2>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header">panel_header</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_footer">panel_footer</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel"&gt;
+    &lt;div class="panel_header"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Panels whit hover effect</legend>
+                                            <div class="pnl">
+                                                <div class="pnl_header">pnl_header</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_footer">pnl_footer</div>
+                                            </div>
+<br/>
+<pre><code>
+&lt;div class="pnl"&gt;
+    &lt;div class="pnl_header"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Panels group</legend>
+                                        <div class="panel groupv">
+                                            <div class="panel_header">panel_header</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_element">panel_element</div>
+                                            <div class="panel_footer">panel_footer</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel groupv"&gt;
+    &lt;div class="panel_header"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Panels group whit hover effect</legend>
+                                            <div class="pnl groupv">
+                                                <div class="pnl_header">pnl_header</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_element">pnl_element</div>
+                                                <div class="pnl_footer">pnl_footer</div>
+                                            </div>
+<br/>
+<pre><code>
+&lt;div class="pnl groupv"&gt;
+    &lt;div class="pnl_header"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Danger Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header_danger">panel_header_danger</div>
+                                            <div class="panel_element_danger">panel_element_danger</div>
+                                            <div class="panel_element_danger">panel_element_danger</div>
+                                            <div class="panel_element_danger">panel_element_danger</div>
+                                            <div class="panel_footer_danger">panel_footer_danger</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel_danger"&gt;
+    &lt;div class="panel_header_danger"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer_danger"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Danger Panels whit hover effect</legend>
+                                        <div class="panel">
+                                            <div class="pnl_header_danger">pnl_header_danger</div>
+                                            <div class="pnl_element_danger">pnl_element_danger</div>
+                                            <div class="pnl_element_danger">pnl_element_danger</div>
+                                            <div class="pnl_element_danger">pnl_element_danger</div>
+                                            <div class="pnl_footer_danger">pnl_footer_danger</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="pnl_danger"&gt;
+    &lt;div class="pnl_header_danger"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_danger"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer_danger"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Info Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header_info">panel_header_info</div>
+                                            <div class="panel_element_info">panel_element_info</div>
+                                            <div class="panel_element_info">panel_element_info</div>
+                                            <div class="panel_element_info">panel_element_info</div>
+                                            <div class="panel_footer_info">panel_footer_info</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel_info"&gt;
+    &lt;div class="panel_header_info"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer_info"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Info Panels whit hover effect</legend>
+                                        <div class="panel">
+                                            <div class="pnl_header_info">pnl_header_info</div>
+                                            <div class="pnl_element_info">pnl_element_info</div>
+                                            <div class="pnl_element_info">pnl_element_info</div>
+                                            <div class="pnl_element_info">pnl_element_info</div>
+                                            <div class="pnl_footer_info">pnl_footer_info</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="pnl_info"&gt;
+    &lt;div class="pnl_header_info"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_info"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer_info"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Success Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header_success">panel_header_success</div>
+                                            <div class="panel_element_success">panel_element_success</div>
+                                            <div class="panel_element_success">panel_element_success</div>
+                                            <div class="panel_element_success">panel_element_success</div>
+                                            <div class="panel_footer_success">panel_footer_success</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel_success"&gt;
+    &lt;div class="panel_header_success"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer_success"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Success Panels whit hover effect</legend>
+                                        <div class="panel">
+                                            <div class="pnl_header_success">pnl_header_success</div>
+                                            <div class="pnl_element_success">pnl_element_success</div>
+                                            <div class="pnl_element_success">pnl_element_success</div>
+                                            <div class="pnl_element_success">pnl_element_success</div>
+                                            <div class="pnl_footer_success">pnl_footer_success</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="pnl_success"&gt;
+    &lt;div class="pnl_header_success"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_success"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer_success"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Warning Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header_warning">panel_header_warning</div>
+                                            <div class="panel_element_warning">panel_element_warning</div>
+                                            <div class="panel_element_warning">panel_element_warning</div>
+                                            <div class="panel_element_warning">panel_element_warning</div>
+                                            <div class="panel_footer_warning">panel_footer_warning</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel_warning"&gt;
+    &lt;div class="panel_header_warning"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer_warning"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Warning Panels whit hover effect</legend>
+                                        <div class="panel">
+                                            <div class="pnl_header_warning">pnl_header_warning</div>
+                                            <div class="pnl_element_warning">pnl_element_warning</div>
+                                            <div class="pnl_element_warning">pnl_element_warning</div>
+                                            <div class="pnl_element_warning">pnl_element_warning</div>
+                                            <div class="pnl_footer_warning">pnl_footer_warning</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="pnl_warning"&gt;
+    &lt;div class="pnl_header_warning"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_warning"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer_warning"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Disabled Panels</legend>
+                                        <div class="panel">
+                                            <div class="panel_header_disabled">panel_header_disabled</div>
+                                            <div class="panel_element_disabled">panel_element_disabled</div>
+                                            <div class="panel_element_disabled">panel_element_disabled</div>
+                                            <div class="panel_element_disabled">panel_element_disabled</div>
+                                            <div class="panel_footer_disabled">panel_footer_disabled</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="panel_disabled"&gt;
+    &lt;div class="panel_header_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="panel_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="panel_footer_disabled"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;" class="fl-box8">
+                                        <legend class="size_m-rcorners9">Disabled Panels (hover effect not work)</legend>
+                                        <div class="panel">
+                                            <div class="pnl_header_disabled">pnl_header_disabled</div>
+                                            <div class="pnl_element_disabled">pnl_element_disabled</div>
+                                            <div class="pnl_element_disabled">pnl_element_disabled</div>
+                                            <div class="pnl_element_disabled">pnl_element_disabled</div>
+                                            <div class="pnl_footer_disabled">pnl_footer_disabled</div>
+                                        </div>
+<br/>
+<pre><code>
+&lt;div class="pnl_disabled"&gt;
+    &lt;div class="pnl_header_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_element_disabled"&gt;...&lt;/div&gt;
+    &lt;div class="pnl_footer_disabled"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                </div>
+                            </div>
+            
+                        </section>
+            
+                    <div class="clean"></div>
+                    </section>
+            
+                </section>
+            
+            <div class="clean"></div>
+            </section>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2017
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>

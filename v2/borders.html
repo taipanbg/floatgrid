@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Borders - FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Borders in FloatGrid. Border radius. Shadows. Classes and examples.">
+        <meta name="keywords" content="Borders,radius,shadows,FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel=icon href="./favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/floatgrid.css">
+        <link rel="stylesheet" href="./css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="./css/bgrey.css">
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="flexiblebasis" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./getting_started">Getting started</a></li>
+                                <li><a href="./documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="./responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./media_queries">Media Queries</a></li>
+                                                <li><a href="./visibility">Visibility</a></li>
+                                                <li><a href="./fluid">Fluid</a></li>
+                                                <li><a href="./grid">Grid basics</a></li>
+                                                <li><a href="./typography">Typography</a></li>
+                                                <li><a href="./element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./icons">Icons</a></li>
+                                                <li><a href="./forms">Forms</a></li>
+                                                <li><a href="./groups">Groups</a></li>
+                                                <li><a href="./borders">Borders</a></li>
+                                                <li><a href="./chips_badges">Chips and Badges</a></li>
+                                                <li><a href="./thumbnails">Images</a></li>
+                                                <li><a href="./contextual_colors">Contextual colors</a></li>
+                                                <li><a href="./progress">Progress bars</a></li>
+                                                <li><a href="./panels">Panels</a></li>
+                                                <li><a href="./tables">Tables</a></li>
+                                                <li><a href="./tooltip">Tooltip</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="./dividers">Dividers</a></li>
+                                                <li><a href="./clearfix">Clearfix</a></li>
+                                                <li><a href="./float">float</a></li>
+                                                <li><a href="./position">Position</a></li>
+                                                <li><a href="./padding">Padding</a></li>
+                                                <li><a href="./margin">Margin</a></li>
+                                                <li><a href="./vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <section id="schale" class="fc-container">
+            
+                <section id="wrapper" class="fl-container-box16">
+            
+                    <section id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Borders</h2>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-box16-mfluid bblk0">
+                                        <legend class="bblk0-size_m-rounded9">border radius</legend>
+                                        <div class="fc-container">
+                                            <div class="bblk0-size_xxs-radius3 fl-box5 pmfluid">size_xxs radius3</div>
+                                        <div class="bblk0-size_xxs-rounded3 fl-box5 pmfluid">size_xxs rounded3</div>
+                                        <div class="bblk0-size_xxs-radius18 fl-box5 pmfluid">size_xxs radius18</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_xs-radius5 fl-box5 pmfluid">size_xs radius5</div>
+                                        <div class="bblk0-size_xs-rounded5 fl-box5 pmfluid">size_xs rounded5</div>
+                                        <div class="bblk0-size_xs-radius24 fl-box5 pmfluid">size_xs radius24</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_s-radius7 fl-box5 pmfluid">size_s radius7</div>
+                                        <div class="bblk0-size_s-rounded7 fl-box5 pmfluid">size_s rounded7</div>
+                                        <div class="bblk0-size_s-radius30 fl-box5 pmfluid">size_s radius30</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_m-radius9 fl-box5 pmfluid">size_m radius9</div>
+                                        <div class="bblk0-size_m-rounded9 fl-box5 pmfluid">size_m rounded9</div>
+                                        <div class="bblk0-size_m-radius32 fl-box5 pmfluid">size_m radius32</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_l-radius12 fl-box5 pmfluid">size_l radius12</div>
+                                        <div class="bblk0-size_l-rounded12 fl-box5 pmfluid">size_l rounded12</div>
+                                        <div class="bblk0-size_l-radius46 fl-box5 pmfluid">size_l radius46</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_xl-radius15 fl-box5 pmfluid">size_xl radius15</div>
+                                        <div class="bblk0-size_xl-rounded15 fl-box5 pmfluid">size_xl rounded15</div>
+                                        <div class="bblk0-size_xl-radius58 fl-box5 pmfluid">size_xl radius58</div>
+                                        </div>
+                                        <div class="fc-container">
+                                        <div class="bblk0-size_xxl-radius18 fl-box5 pmfluid">size_xxl radius18</div>
+                                        <div class="bblk0-size_xxl-rounded18 fl-box5 pmfluid">size_xxl rounded18</div>
+                                        <div class="bblk0-size_xxl-radius70 fl-box5 pmfluid">size_xxl radius70</div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="bblk0-size_xxl-r10 fl-box5 pmfluid">size_xxl r10 = 10%</div>
+                                        <div class="bblk0-size_xxl-r25 fl-box5 pmfluid">size_xxl r25 = 25%</div>
+                                        <div class="bblk0-size_xxl-r50 fl-box5 pmfluid">size_xxl r50 = 50%</div>
+                                        
+                                        <div class="bblk0-size_xxl-radius18_left fl-box4 pmfluid">radius18_left</div>
+                                        <div class="bblk0-size_xxl-radius18_right fl-box4 pmfluid">radius18_right</div>
+                                        <div class="bblk0-size_xxl-radius18_top fl-box4 pmfluid">radius18_top</div>
+                                        <div class="bblk0-size_xxl-radius18_bottom fl-box4 pmfluid">radius18_bottom</div>
+                                    
+                                            <table>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_xxs leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_xxs leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_xs leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_xs leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_s leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_s leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_m leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_m leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_l leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_l leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_xl leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_xl leaf_right">leaf_right</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="fr-bblk0-size_xxl leaf_left">leaf_left</div></td>
+                                                    <td><div class="bblk0-size_xxl leaf_right">leaf_right</div></td>
+                                                </tr>
+                                            </table>
+                                        
+                                    </fieldset>
+                                </div>
+                                
+                                
+                                
+                                
+                                <div class="fc-box12">
+                <fieldset style="padding:.5%;margin: .5%;" class="fl-box5-mfluid bblk0">
+                    <legend class="bblk0-size_m-rounded9">Shadow</legend>
+                    <div class="shadow">
+                        shadow<br>
+                        shadow<br>
+                        shadow<br>
+                        shadow<br>
+                    </div>
+                    <br>
+<pre><code>
+&lt;div class="shadow"&gt;...&lt;/div&gt;
+</code></pre>
+                </fieldset>
+                <fieldset style="padding:.5%;margin: .5%;" class="fl-box5-mfluid bblk0">
+                    <legend class="bblk0-size_m-rounded9">Shadows inset</legend>
+                    <div class="shdw_inset">
+                        shdw_inset<br>
+                        shdw_inset<br>
+                        shdw_inset<br>
+                        shdw_inset<br>
+                    </div>
+                    <br>
+<pre><code>
+&lt;div class="shdw_inset"&gt;...&lt;/div&gt;
+</code></pre>
+                </fieldset>
+                <fieldset style="padding:.5%;margin: .5%;" class="fl-box5-mfluid bblk0">
+                    <legend class="bblk0-size_m-rounded9">Shadows</legend>
+                    <div class="shadow">
+                        <div class="shdw_inset">
+                            shadow+shdw_inset<br>
+                            shadow+shdw_inset<br>
+                            shadow+shdw_inset<br>
+                            shadow+shdw_inset<br>
+                        </div>
+                    </div>
+                    <br>
+<pre><code>
+&lt;div class="shadow"&gt;
+    &lt;div class="shdw_inset"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                </fieldset>
+                <div class="clean"></div>
+            </div>
+                                <div class="fc-box12">
+                <fieldset style="padding:.5%;margin: .5%;" class="fl-box5-mfluid bblk0">
+                    <legend class="bblk0-size_m-rounded9">Border colors</legend>
+                    
+                    <div class="brd_white-size_m">brd_white</div>
+                    <div class="brd50-size_m">brd50</div><br/>
+                    <div class="brd100-size_m">brd100</div><br/>
+                    <div class="brd200-size_m">brd200</div><br/>
+                    <div class="brd300-size_m">brd300</div><br/>
+                    <div class="brd400-size_m">brd400</div><br/>
+                    <div class="brd500-size_m">brd500</div><br/>
+                    <div class="brd600-size_m">brd600</div><br/>
+                    <div class="brd700-size_m">brd700</div><br/>
+                    <div class="brd800-size_m">brd800</div><br/>
+                    <div class="brd900-size_m">brd900</div><br/>
+                    <div class="brd_black-size_m">brd_black</div>
+                    
+                    
+                </fieldset>
+                <div class="clean"></div>
+            </div>
+                            </div>
+            
+                        </section>
+            
+                    <div class="clean"></div>
+                    </section>
+            
+                </section>
+            
+            <div class="clean"></div>
+            </section>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2017
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>

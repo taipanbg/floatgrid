@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Element sizes - FloatGrid</title>
+        <title>Vertical alignment - FloatGrid</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Element sizes in FloatGrid. Classes and examples.">
-        <meta name="keywords" content="Element sizes,Sizes,FloatGrid,Float,Grid">
+        <meta name="description" content="Vertical alignment in FloatGrid. Classes and examples.">
+        <meta name="keywords" content="Vertical alignment,FloatGrid,Float,Grid">
         <meta name="author" content="Rosen Vlasev">
         <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -105,30 +105,110 @@
             
                         <section id="content" class="fl-container-box16">
             
-                            
-                                <h2 style="text-align:center;">Element sizes</h2>
-                            <div class="article fc-box12 clear">
-                                <fieldset style="padding:.5%;margin: .5%;" class="fl-container">
-                                        <legend class="size_m">Sizes</legend>
-                                <div class="size_xxs  bbox4_info">size_xxs</div><br/>
-                                <div class="size_xs  bbox4_info">size_xs</div><br/>
-                                <div class="size_s  bbox4_info">size_xs</div><br/>
-                                <div class="size_m  bbox4_info">size_m</div><br/>
-                                <div class="size_l  bbox4_info">size_l</div><br/>
-                                <div class="size_xl  bbox4_info">size_xl</div><br/>
-                                <div class="size_xxl  bbox4_info">size_xxl</div><br/>
-                                        <pre><code>
-&lt;div class="size_xxs  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_xs  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_s  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_m  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_l  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_xl  bblk0"&gt;...&lt;/div&gt;
-&lt;div class="size_xxl  bblk0"&gt;...&lt;/div&gt;
-                                        </code></pre>
+                            <h2 class="txt_center">Vertical Align</h2>
+                            <div class="article fc-box12">
+                                <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">Vertical Align (text)</legend>
+                                    <div class="container bblk0" style="line-height: 100px;">
+                                        <span class="align_baseline">baseline</span>
+                                        <span class="align_top">top</span>
+                                        <span class="align_middle">middle</span>
+                                        <span class="align_bottom">bottom</span>
+                                        <span class="align_text_top">text-top</span>
+                                        <span class="align_text_bottom">text-bottom</span>
+                                        <span class="align_sub">sub</span>
+                                        <span class="align_super">super</span>
+                                    </div>
+<pre><code>
+&lt;div class="container bblk0" style="line-height: 100px;"&gt;
+    &lt;span class="align_baseline"&gt;baseline&lt;/span&gt;
+    &lt;span class="align_top"&gt;top&lt;/span&gt;
+    &lt;span class="align_middle"&gt;middle&lt;/span&gt;
+    &lt;span class="align_bottom"&gt;bottom&lt;/span&gt;
+    &lt;span class="align_text_top"&gt;text-top&lt;/span&gt;
+    &lt;span class="align_text_bottom"&gt;text-bottom&lt;/span&gt;
+    &lt;span class="align_sub"&gt;sub&lt;/span&gt;
+    &lt;span class="align_super"&gt;super&lt;/spa&gt;
+&lt;/div&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">Vertical Align (image)</legend>
+                                    <div class="container bblk0" style="line-height: 200px;">
+                                        <img src="./img/wolf.jpg" class="align_baseline"/>   
+                                        <img src="./img/wolf.jpg" class="align_top"/>    
+                                        <img src="./img/wolf.jpg" class="align_middle"/>    
+                                        <img src="./img/wolf.jpg" class="align_bottom"/>    
+                                    </div>
+<pre><code>
+&lt;div class="container bblk0" style="line-height: 200px;"&gt;
+    &lt;img src="./img/wolf.jpg" class="align_baseline"/&gt;   
+    &lt;img src="./img/wolf.jpg" class="align_top"/&gt;    
+    &lt;img src="./img/wolf.jpg" class="align_middle"/&gt;    
+    &lt;img src="./img/wolf.jpg" class="align_bottom"/&gt;    
+&lt;/div&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">Vertical Align (text in table)</legend>
+                                        <div class="container">
+                                            <table class="table" style="height: 100px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align_baseline">baseline</td>
+                                                        <td class="align_top">top</td>
+                                                        <td class="align_middle">middle</td>
+                                                        <td class="align_bottom">bottom</td>
+                                                        <td class="align_text-top">text-top</td>
+                                                        <td class="align_text-bottom">text-bottom</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+<pre><code>
+&lt;table class="table" style="height: 100px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="align_baseline"&gt;baseline&lt;/td&gt;
+            &lt;td class="align_top"&gt;top&lt;/td&gt;
+            &lt;td class="align_middle"&gt;middle&lt;/td&gt;
+            &lt;td class="align_bottom"&gt;bottom&lt;/td&gt;
+            &lt;td class="align_text-top"&gt;text-top&lt;/td&gt;
+            &lt;td class="align_text-bottom"&gt;text-bottom&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">Vertical Align (image in table)</legend>
+                                        <div class="container">
+                                            <table class="table" style="height: 200px;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align_baseline"><img src="./img/wolf.jpg"/></td>
+                                                        <td class="align_top"><img src="./img/wolf.jpg"/></td>
+                                                        <td class="align_middle"><img src="./img/wolf.jpg"/></td>
+                                                        <td class="align_bottom"><img src="./img/wolf.jpg"/> </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+<pre><code>
+&lt;table class="table" style="height: 200px;"&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="align_baseline"&gt;&lt;img src="./img/wolf.jpg"/&gt;&lt;/td&gt;
+            &lt;td class="align_top"&gt;&lt;img src="./img/wolf.jpg"/&gt;&lt;/td&gt;
+            &lt;td class="align_middle"&gt;&lt;img src="./img/wolf.jpg"/&gt;&lt;/td&gt;
+            &lt;td class="align_bottom"&gt;&lt;img src="./img/wolf.jpg"/&gt; &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
                                 </fieldset>
                             </div>
-            
+                            
                         </section>
             
                     <div class="clean"></div>

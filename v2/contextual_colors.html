@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>FloatGrid</title>
+        <title>Contextual colors - FloatGrid</title>
         <meta charset="UTF-8">
-        <meta name="description" content="FloatGrid is HTML and CSS grid for front-end developing responsive web projects for every device.">
-        <meta name="keywords" content="FloatGrid,Float,Grid">
+        <meta name="description" content="Contextual colors in FloatGrid. Classes and examples.">
+        <meta name="keywords" content="Contextual colors,colors,FloatGrid,Float,Grid">
         <meta name="author" content="Rosen Vlasev">
         <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -91,63 +91,107 @@
                 <!--<div class="acide" style="float: right;">
                     <div class="login_box" style="">
                         <div class="sLogin">
-                            <a href="./#">login</a>
+                            <a href="#">login</a>
                         </div>
                     </div>
                 </div>-->
             </header> 
+            
             <section id="schale" class="fc-container">
+            
                 <section id="wrapper" class="fl-container-box16">
+            
                     <section id="wrap" class="fc-container">
+            
                         <section id="content" class="fl-container-box16">
-                            <h2 class="txt_center">Responsive float grid for every device</h2>
-                            <div class="article">
-                                <div class="txt_center" style="padding-top:50px;">
-                                    <img src="img/responsive.jpg" alt="responsive gridfor every device" style="width:20%;min-width: 180px;">
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> is HTML and CSS grid<br> 
-                                            for front-end developing responsive web projects for every device.</div><br>
-                                    <!--<div style="font-size: 18px;"><strong>Floatgrid</strong> ist HTML- und CSS-Gitter<br> 
-                                            für Front-End-Entwicklung responsive Web-Projekte für jedes Gerät.</div><br>
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> е HTML и CSS мрежа<br> 
-                                            за front-end разработване на responsive уеб проекти за всяко устройство.</div><br>
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> это HTML и CSS сеть<br> 
-                                            для front-end разработки responsive веб-проектов для каждого устройства.</div>-->
-                                </div>
-                                <div class="fc-container txt_center" style="padding-top:50px;">
-                                    <a href="./getting_started" class="button_info size_l radius5" style="margin-top:10px;">Getting started</a>
-                                    <a href="./downloads" class="button_success size_l radius5" style="margin-top:10px;">Download</a>
-                                </div>
-                                <div class="txt_center" style="padding-top:50px;">Cross-browser compatibility</div>
-                                <div class="responsive-table">
-                                    <table class="table_compact" style="padding-top:100px;margin:auto;width:162px;">
-                                        <tbody>
-                                            <tr>
-                                                <th colspan="5" style="text-align: center;"><img src="img/desktop-browser-logos.png" alt="chrome"></th>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">21</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">10</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">3.5</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">4.0</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">10.5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+            
+                            <h2 class="txt_center">Contextual colors</h2>
+                            <div class="article box12">
+                                <fieldset style="padding:.5%;" class="fl-offset1-box4">
+                                    <legend class="size_m-rcorners9">Contextual Backgrounds colors</legend>
+                                    <div class="bgr_dngr size_m">danger background</div><br/>
+                                    <div class="bgr_infr size_m">info  background</div><br/>
+                                    <div class="bgr_sccs size_m">success  background</div><br/>
+                                    <div class="bgr_wrng size_m">warning  background</div><br/>
+                                    <div class="bgr_dsbl size_m">disabled  background</div><br/>
+                                    
+<br/>
+<pre><code>
+&lt;div class="bgr_dngr size_m"&gt;...&lt;/div&gt;
+&lt;div class="bgr_infr size_m"&gt;...&lt;/div&gt;
+&lt;div class="bgr_sccs size_m"&gt;...&lt;/div&gt;
+&lt;div class="bgr_wrng size_m"&gt;...&lt;/div&gt;
+&lt;div class="bgr_dsbl size_m"&gt;...&lt;/div&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset style="padding:.5%;" class="fl-offset1-box4">
+                                    <legend class="size_m-rcorners9">Contextual Borders colors</legend>
+                                    <div class="brd_dngr size_m">danger border</div><br/>
+                                    <div class="brd_infr size_m">info border</div><br/>
+                                    <div class="brd_sccs size_m">success border</div><br/>
+                                    <div class="brd_wrng size_m">warning border</div><br/>
+                                    <div class="brd_dsbl size_m">disabled border</div><br/>
+<br/>
+<pre><code>
+&lt;div class="brd_dngr size_m"&gt;...&lt;/div&gt;
+&lt;div class="brd_infr size_m"&gt;...&lt;/div&gt;
+&lt;div class="brd_sccs size_m"&gt;...&lt;/div&gt;
+&lt;div class="brd_wrng size_m"&gt;...&lt;/div&gt;
+&lt;div class="brd_dsbl size_m"&gt;...&lt;/div&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset style="padding:.5%;" class="fl-offset1-box4">
+                                    <legend class="size_m-rcorners9">Contextual text colors</legend>
+                                    <div class="txt_dngr size_m">danger text</div><br/>
+                                    <div class="txt_infr size_m">info text</div><br/>
+                                    <div class="txt_sccs size_m">success text</div><br/>
+                                    <div class="txt_wrng size_m">warning text</div><br/>
+                                    <div class="txt_dsbl size_m">disabled text</div><br/>
+<br/>
+<pre><code>
+&lt;div class="txt_dngr size_m"&gt;...&lt;/div&gt;
+&lt;div class="txt_infr size_m"&gt;...&lt;/div&gt;
+&lt;div class="txt_sccs size_m"&gt;...&lt;/div&gt;
+&lt;div class="txt_wrng size_m"&gt;...&lt;/div&gt;
+&lt;div class="txt_dsbl size_m"&gt;...&lt;/div&gt;
+</code></pre>
+                                </fieldset>
+                                <fieldset style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">Contextual Blocks colors</legend>
+                                    <div class="alert_danger bblock size_m"><span class="icobox_m_tricross"></span>danger</div><br/>
+                                    <div class="alert_info bblock size_m"><span class="icobox_m_infs"></span>info</div><br/>
+                                    <div class="alert_success bblock size_m"><span class="icobox_m_tick1"></span>success</div><br/>
+                                    <div class="alert_warning bblock size_m"><span class="icobox_m_triexcl"></span>warning</div><br/>
+                                    <div class="alert_disabled bblock size_m"><span class="icobox_m_odivision"></span>disabled</div><br/>
+<br/>
+<pre><code>
+&lt;div class="alert_danger bblock size_m"&gt;&lt;span class="icobox_m_tricross"&gt;&lt;/span&gt;...&lt;/div&gt;
+&lt;div class="alert_info bblock size_m"&gt;&lt;span class="icobox_m_infs">&lt;/span&gt;...&lt;/div&gt;
+&lt;div class="alert_success bblock size_m"&gt;&lt;span class="icobox_m_tick1">&lt;/span&gt;...&lt;/div&gt;
+&lt;div class="alert_warning bblock size_m"&gt;&lt;span class="icobox_m_triexcl">&lt;/span&gt;...&lt;/div&gt;
+&lt;div class="alert_disabled bblock size_m"&gt;&lt;span class="icobox_m_odivision">&lt;/span&gt;...&lt;/div&gt;
+</code></pre>
+                                </fieldset>
                             </div>
+            
                         </section>
+            
                     <div class="clean"></div>
                     </section>
+            
                 </section>
+            
             <div class="clean"></div>
             </section>
+            
         </div>
+            
         <div id="chr" style=""><div class="clean"></div></div>
         <div id="copyright"  style="z-index: 500;">
             <div style="background:#ECEFF1;text-align: center;font-size:10px">
                 Copyright (c) 2011-2018
             </div>
-        </div>
+        </div>  
         <script src="js/fxxxf_xwxxcx.js"></script>
     </body>
 </html>

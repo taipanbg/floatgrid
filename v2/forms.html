@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms - FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Forms in FloatGrid.">
+        <meta name="keywords" content="Forms,input,textarea,selects,radio,checkbox,buttons,FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel=icon href="./favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/floatgrid.css">
+        <link rel="stylesheet" href="./css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="./css/bgrey.css">
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="flexiblebasis" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./getting_started">Getting started</a></li>
+                                <li><a href="./documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="./responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./media_queries">Media Queries</a></li>
+                                                <li><a href="./visibility">Visibility</a></li>
+                                                <li><a href="./fluid">Fluid</a></li>
+                                                <li><a href="./grid">Grid basics</a></li>
+                                                <li><a href="./typography">Typography</a></li>
+                                                <li><a href="./element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./icons">Icons</a></li>
+                                                <li><a href="./forms">Forms</a></li>
+                                                <li><a href="./groups">Groups</a></li>
+                                                <li><a href="./borders">Borders</a></li>
+                                                <li><a href="./chips_badges">Chips and Badges</a></li>
+                                                <li><a href="./thumbnails">Images</a></li>
+                                                <li><a href="./contextual_colors">Contextual colors</a></li>
+                                                <li><a href="./progress">Progress bars</a></li>
+                                                <li><a href="./panels">Panels</a></li>
+                                                <li><a href="./tables">Tables</a></li>
+                                                <li><a href="./tooltip">Tooltip</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="./dividers">Dividers</a></li>
+                                                <li><a href="./clearfix">Clearfix</a></li>
+                                                <li><a href="./float">float</a></li>
+                                                <li><a href="./position">Position</a></li>
+                                                <li><a href="./padding">Padding</a></li>
+                                                <li><a href="./margin">Margin</a></li>
+                                                <li><a href="./vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <section id="schale" class="fc-container">
+            
+                <section id="wrapper" class="fl-container-box16">
+            
+                    <section id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Forms <br/><small>(inputs, textareas, selects, radio and checkbox, butons)</small></h2>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-container">
+                                            <legend class="size_m">Basic inputs</legend>
+                                            <input type="text" name="name" placeholder="Name"/><br/>
+<pre><code>
+&lt;input type="text" name="name" placeholder="Name"/&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-container">
+                                            <legend class="size_m">Block inputs</legend>
+                                            <input class="box16" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="box4" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="box8" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="fc-box7" type="text" name="name" placeholder="Name"/><br/>
+
+<pre>For the length and layout, use the base floatgrid classes
+<code>
+&lt;input type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="box16" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="box4" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="box8" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="fc-box7" type="text" name="name" placeholder="Name"/&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-container">
+                                            <legend class="size_m">Input sizes</legend>
+                                            <input class="size_xxs" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_xs" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_s" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_m" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_l" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_xl" type="text" name="name" placeholder="Name"/><br/>
+                                            <input class="size_xxl" type="text" name="name" placeholder="Name"/><br/>
+<pre>For size use the base size classes
+<code>
+&lt;input class="size_xxs" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_xs" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_s" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_m" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_l" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_xl" type="text" name="name" placeholder="Name"/&gt;
+&lt;input class="size_xxl" type="text" name="name" placeholder="Name"/&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">pattern</legend>
+                                        Password: <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="radius3" value="Password">
+                                        <small>Must contain at least one number and one uppercase and lowercase letter, 
+                                            and at least 8 or more characters</small><br><br>
+                                        E-mail: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="radius3" value="E-mail"><br><br>
+                                        Search: <input type="search" name="search" pattern="[^'\x22]+" title="Invalid input" class="radius3" value="search'"><br><br>
+                                        Homepage: <input type="url" name="website" pattern="https?://.+" title="Include http://" class="radius3" value="url"><br>
+                                        <br>
+            
+<pre><code>
+&lt;input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or more characters"
+        class="radius3" value="Password"&gt;
+                             
+&lt;small&gt;Must contain at least one number and one uppercase and lowercase letter, 
+    and at least 8 or more characters&lt;/small&gt;
+&lt;input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="radius3" value="E-mail"&gt;
+&lt;input type="search" name="search" pattern="[^'\x22]+" title="Invalid input" class="radius3" value="search'"&gt;
+&lt;input type="url" name="link" pattern="https?://.+" title="Include http://" class="radius3" value="url"&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">input box type</legend>
+                                        text<input type="text" name="usrname" placeholder="Name" class="radius3"><br>
+                                        email<input type="email" name="email" placeholder="example@domain.com" class="radius3"><br>
+                                        password<input type="password" class="radius3" placeholder="password"><br>
+                                        url<input type="url" name="homepage" placeholder="http://domain.com" class="radius3"><br>
+                                        number<input type="number" name="quantity" min="1" max="20" step="3" value="1" class="radius3"><br>
+                                        date <input type="date" name="Date" class="radius3"><br>
+                                        datetime <input type="datetime" name="datatime" class="radius3"><br>
+                                        datetime-local <input type="datetime-local" name="dtlocal" class="radius3"><br>
+                                        month <input type="month" name="month" class="radius3"><br>
+                                        search <input type="search" name="googlesearch" class="radius3"><br>
+                                        tel <input type="tel" name="usrtel" placeholder="User Telepfon" class="radius3"><br>
+                                        time <input type="time" name="usr_time" class="radius3"><br>
+                                        week <input type="week" name="week_year" class="radius3"><br>
+                                        <br>
+<pre><code>
+&lt;input type="text" name="usrname" placeholder="Name" class="radius3"&gt;
+&lt;input type="email" name="email" placeholder="example@domain.com" class="radius3"&gt;
+&lt;input type="password" class="radius3" placeholder="password"&gt;
+&lt;input type="url" name="homepage" placeholder="http://domain.com" class="radius3"&gt;
+&lt;input type="number" name="quantity" min="1" max="20" step="3" value="1" class="radius3"&gt;
+&lt;input type="date" name="Date" class="radius3"&gt;
+&lt;input type="datetime" name="datatime" class="radius3"&gt;
+&lt;input type="datetime-local" name="dtlocal" class="radius3"&gt;
+&lt;input type="month" name="month" class="radius3"&gt;
+&lt;input type="search" name="googlesearch" class="radius3"&gt;
+&lt;input type="tel" name="usrtel" placeholder="User Telepfon" class="radius3"&gt;
+&lt;input type="time" name="usr_time" class="radius3"&gt;
+&lt;input type="week" name="week_year" class="radius3"&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">input wit label and help text</legend>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in1">
+                                                <span>Label</span>
+                                                <input id="in1" type="text" placeholder="Text input">
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in1"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in1" type="text" placeholder="Text input"&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Inline input wit label and help text</legend>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in7" class="container">
+                                                <span class="fl-">Label</span>
+                                                <input id="in7" class="fl-box" type="text" placeholder="Text input">
+                                                <span class="fl-"><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in8" class="container">
+                                                <span class="fl-size_m_mail1"></span>
+                                                <input id="in8" class="fl-size_m" type="text" placeholder="Enter your e-mail">
+                                                <span class="fl-size_m"><small>You will receive confirmation mails</small></span>
+                                            </label>
+                                        </form><br/>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in9" class="container">
+                                                <span class="fl-size_l">Label</span>
+                                                <input id="in9" class="fl-size_l" type="text" placeholder="Text input">
+                                                <span class="fl-size_l"><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in7" class="container"&gt;
+        &lt;span class="fl-"&gt;Label&lt;/span&gt;
+        &lt;input id="in7" class="fl-box" type="text" placeholder="Text input"&gt;
+        &lt;span class="fl-"&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+----------------------------------------------------------------------------------------------------------------
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in7" class="container"&gt;
+        &lt;span class="fl-size_m_mail1"&gt;&lt;/span&gt;
+        &lt;input id="in7" class="fl-size_m" type="text" placeholder="Enter your e-mail"&gt;
+        &lt;span class="fl-size_m"&gt;&lt;small&gt;You will receive confirmation mails&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+----------------------------------------------------------------------------------------------------------------
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in7" class="container"&gt;
+        &lt;span class="fl-size_l"&gt;Label&lt;/span&gt;
+        &lt;input id="in7" class="fl-size_l" type="text" placeholder="Text input"&gt;
+        &lt;span class="fl-size_l"&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Contextual color input wit label and help text</legend>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in2" class="_danger">
+                                                <span>Label</span>
+                                                <input id="in2" class="_danger" type="text" placeholder="Text input">
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in3" class="_info">
+                                                <span>Label</span>
+                                                <input id="in3" class="_info" type="text" placeholder="Text input">
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in4" class="_success">
+                                                <span>Label</span>
+                                                <input id="in4" class="_success" type="text" placeholder="Text input">
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in5" class="_warning">
+                                                <span>Label</span>
+                                                <input id="in5" class="_warning" type="text" placeholder="Text input">
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in2" class="_danger"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in2" class="_danger" type="text" placeholder="Text input"&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+--------------------------------------------------------------------------------------
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in3" class="_info"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in3" class="_info" type="text" placeholder="Text input"&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+--------------------------------------------------------------------------------------
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in4" class="_success"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in4" class="_success" type="text" placeholder="Text input"&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+--------------------------------------------------------------------------------------
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in5" class="_warning"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in5" class="_warning" type="text" placeholder="Text input"&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                    
+                                        <h4>Disabled input</h4>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in6" class="_disabled">
+                                                <span>Label</span>
+                                                <input id="in6" class="_disabled" type="text" placeholder="Text input" disabled>
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in6" class="_disabled"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in6" class="_disabled" type="text" placeholder="Text input" disabled&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        <h4>readonly input</h4>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in12" class="_disabled">
+                                                <span>Label</span>
+                                                <input id="in12" type="text" placeholder="Text input" readonly>
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in6" class="_readonly"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;input id="in6" type="text" placeholder="Text input" readonly&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">textarea wit label and help text</legend>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in10">
+                                                <span>Label</span>
+                                                <textarea id="in10" placeholder="Message"></textarea>
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in10"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;textarea id="in10" placeholder="Message"&gt;&lt;/textarea&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        <h4>Readonly textarea</h4>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in11" class="_disabled">
+                                                <span>Label</span>
+                                                <textarea id="in11"  class="_disabled" placeholder="Message" disabled></textarea>
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in11" class="_readonly"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;textarea id="in11" placeholder="Message" readonly&gt;&lt;/textarea&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        <h4>Disabled textarea</h4>
+                                        <form action="#" method="post" name="example_form">
+                                            <label for="in111" class="_disabled">
+                                                <span>Label</span>
+                                                <textarea id="in111"  class="_disabled" placeholder="Message" disabled></textarea>
+                                                <span><small>Help text</small></span>
+                                            </label>
+                                        </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="in11" class="_disabled"&gt;
+        &lt;span&gt;Label&lt;/span&gt;
+        &lt;textarea id="in11" class="_disabled" placeholder="Message" disabled&gt;&lt;/textarea&gt;
+        &lt;span&gt;&lt;small&gt;Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+<br/>
+<div class="fc-container_info"> <span class="_infs"></span> For contextual color, size and position use the base classes as in input. </div><br/>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic select</legend>
+                                        <select name="name">
+                                            <option value="1">option 1</option>
+                                            <option value="2" selected>option 2</option>
+                                            <option value="3">option 3</option>
+                                            <option value="4">option 4</option>
+                                        </select><br/>
+<pre><code>
+&lt;select name="name"&gt;
+    &lt;option value="1"&gt;option 1&lt;/option&gt;
+    &lt;option value="2" selected&gt;option 2&lt;/option&gt;
+    &lt;option value="3"&gt;option 3&lt;/option&gt;
+    &lt;option value="4"&gt;option 4&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic select whit disabled option</legend>
+                                        <select  name="name">
+                                            <option value="1">option 1</option>
+                                            <option value="2" disabled>option 2</option>
+                                            <option value="3">option 3</option>
+                                            <option value="4">option 4</option>
+                                        </select><br/>
+<pre><code>
+&lt;select name="name"&gt;
+    &lt;option value="1"&gt;option 1&lt;/option&gt;
+    &lt;option value="2" disabled&gt;option 2&lt;/option&gt;
+    &lt;option value="3"&gt;option 3&lt;/option&gt;
+    &lt;option value="4"&gt;option 4&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Multiple select</legend>
+                                        <select name="name" multiple>
+                                            <option value="1">option 1</option>
+                                            <option value="2" selected>option 2</option>
+                                            <option value="3">option 3</option>
+                                            <option value="4" selected>option 4</option>
+                                        </select><br/>
+<pre><code>
+&lt;select name="name" multiple&gt;
+    &lt;option value="1"&gt;option 1&lt;/option&gt;
+    &lt;option value="2" selected&gt;option 2&lt;/option&gt;
+    &lt;option value="3"&gt;option 3&lt;/option&gt;
+    &lt;option value="4" selected&gt;option 4&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+                                        <div class="fc-container_info"> <span class="_infs"></span>
+                                            Hold down the Ctrl (windows,linux) / Command (Mac) button to select multiple options.
+                                        </div>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic optgroup</legend>
+                                        <select name="name">
+                                            <optgroup label="optgroup1">
+                                                <option value="1">option 1.1</option>
+                                                <option value="2">option 1.2</option>
+                                                <option value="3">option 1.3</option>
+                                            </optgroup>
+                                            <optgroup label="optgroup2">
+                                                <option value="4">option 2.1</option>
+                                                <option value="5">option 2.2</option>
+                                                <option value="6">option 2.3</option>
+                                            </optgroup>
+                                            <optgroup label="optgroup3">
+                                                <option value="7">option 3.1</option>
+                                                <option value="8">option 3.2</option>
+                                                <option value="9">option 3.3</option>
+                                            </optgroup>
+                                        </select><br/>
+<pre><code>
+&lt;select name="name"&gt;
+    &lt;optgroup label="optgroup1"&gt;
+        &lt;option value="1"&gt;option 1.1&lt;/option&gt;
+        &lt;option value="2"&gt;option 1.2&lt;/option&gt;
+        &lt;option value="3"&gt;option 1.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="optgroup2"&gt;
+        &lt;option value="4"&gt;option 2.1&lt;/option&gt;
+        &lt;option value="5"&gt;option 2.2&lt;/option&gt;
+        &lt;option value="6"&gt;option 2.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="optgroup3"&gt;
+        &lt;option value="7"&gt;option 3.1&lt;/option&gt;
+        &lt;option value="8"&gt;option 3.2&lt;/option&gt;
+        &lt;option value="9"&gt;option 3.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic optgroup whit disabled group</legend>
+                                        <select name="name">
+                                            <optgroup label="optgroup1">
+                                                <option value="1">option 1.1</option>
+                                                <option value="2">option 1.2</option>
+                                                <option value="3">option 1.3</option>
+                                            </optgroup>
+                                            <optgroup label="optgroup2" disabled>
+                                                <option value="4">option 2.1</option>
+                                                <option value="5">option 2.2</option>
+                                                <option value="6">option 2.3</option>
+                                            </optgroup>
+                                            <optgroup label="optgroup3">
+                                                <option value="7">option 3.1</option>
+                                                <option value="8">option 3.2</option>
+                                                <option value="9">option 3.3</option>
+                                            </optgroup>
+                                        </select><br/>
+<pre><code>
+&lt;select name="name"&gt;
+    &lt;optgroup label="optgroup1"&gt;
+        &lt;option value="1"&gt;option 1.1&lt;/option&gt;
+        &lt;option value="2"&gt;option 1.2&lt;/option&gt;
+        &lt;option value="3"&gt;option 1.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="optgroup2" disabled&gt;
+        &lt;option value="4"&gt;option 2.1&lt;/option&gt;
+        &lt;option value="5"&gt;option 2.2&lt;/option&gt;
+        &lt;option value="6"&gt;option 2.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="optgroup3"&gt;
+        &lt;option value="7"&gt;option 3.1&lt;/option&gt;
+        &lt;option value="8"&gt;option 3.2&lt;/option&gt;
+        &lt;option value="9"&gt;option 3.3&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic checkbox and radio whit label and help text</legend>
+                                        <div class="fl-box4">
+                                            <form action="#" method="post" name="example_form">
+                                                <label for="c1">    
+                                                    <input type="checkbox" name="check1" id="c1" value="1" checked>
+                                                    <span> Label1 </span>
+                                                </label>
+                                                <label for="c2">    
+                                                    <input type="checkbox" name="check2" id="c2" value="2">
+                                                    <span> Label2 </span>
+                                                </label>
+                                                <label for="c3">    
+                                                    <input type="checkbox" name="check3" id="c3" value="3">
+                                                    <span> Label3 </span>
+                                                </label>
+
+
+                                                <label for="r1">    
+                                                    <input type="radio" name="radio1" id="r1" value="option1">
+                                                    <span> Label1 </span>
+                                                </label>
+                                                <label for="r2">    
+                                                    <input type="radio" name="radio1" id="r2" value="option1" checked>
+                                                    <span> Label2 </span>
+                                                </label>
+                                                <label for="r3">    
+                                                    <input type="radio" name="radio1" id="r3" value="option1">
+                                                    <span> Label3 </span>
+                                                </label>
+                                            </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="c1"&gt;    
+        &lt;input type="checkbox" name="check1" id="c1" value="1" checked&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c2"&gt;    
+        &lt;input type="checkbox" name="check2" id="c2" value="2"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c3"&gt;    
+        &lt;input type="checkbox" name="check3" id="c3" value="3"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;
+    &lt;/label&gt;
+
+
+    &lt;label for="r1"&gt;    
+        &lt;input type="radio" name="radio1" id="r1" value="option1"&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r2"&gt;    
+        &lt;input type="radio" name="radio1" id="r2" value="option1" checked&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r3"&gt;    
+        &lt;input type="radio" name="radio1" id="r3" value="option1"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        </div>
+                                        <div class="fl-box4">
+                                            <form action="#" method="post" name="example_form">
+                                                <label for="c11">    
+                                                    <input type="checkbox" name="check1" id="c11" value="1" checked>
+                                                    <span> Label1 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c12">    
+                                                    <input type="checkbox" name="check2" id="c12" value="2">
+                                                    <span> Label2 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c13">    
+                                                    <input type="checkbox" name="check3" id="c13" value="3">
+                                                    <span> Label3 </span><span><small> Help text </small></span>
+                                                </label>
+
+
+                                                <label for="r11">    
+                                                    <input type="radio" name="radio1" id="r11" value="option1">
+                                                    <span> Label1 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r12">    
+                                                    <input type="radio" name="radio1" id="r12" value="option1" checked>
+                                                    <span> Label2 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r13">    
+                                                    <input type="radio" name="radio1" id="r13" value="option1">
+                                                    <span> Label3 </span><span><small> Help text</small></span>
+                                                </label>
+                                            </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="c11"&gt;    
+        &lt;input type="checkbox" name="check1" id="c11" value="1" checked&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c12"&gt;    
+        &lt;input type="checkbox" name="check2" id="c12" value="2"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c13"&gt;    
+        &lt;input type="checkbox" name="check3" id="c13" value="3"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+
+
+    &lt;label for="r11"&gt;    
+        &lt;input type="radio" name="radio1" id="r11" value="option1"&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r12"&gt;    
+        &lt;input type="radio" name="radio1" id="r12" value="option1" checked&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r13"&gt;    
+        &lt;input type="radio" name="radio1" id="r13" value="option1"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        </div>
+                                        <div class="fl-box4">
+                                            <form action="#" method="post" name="example_form">
+                                                <label for="c21">    
+                                                    <span> Label1 </span>
+                                                    <input type="checkbox" name="check1" id="c21" value="1" checked>
+                                                    <span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c22">
+                                                    <span> Label2 </span>    
+                                                    <input type="checkbox" name="check2" id="c22" value="2">
+                                                    <span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c23">   
+                                                    <span> Label3 </span> 
+                                                    <input type="checkbox" name="check3" id="c23" value="3">
+                                                    <span><small> Help text </small></span>
+                                                </label>
+
+
+                                                <label for="r21">    
+                                                    <span> Label1 </span>
+                                                    <input type="radio" name="radio1" id="r21" value="option1">
+                                                    <span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r22">    
+                                                    <span> Label2 </span>
+                                                    <input type="radio" name="radio1" id="r22" value="option1" checked>
+                                                    <span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r23">    
+                                                    <span> Label3 </span>
+                                                    <input type="radio" name="radio1" id="r23" value="option1">
+                                                    <span><small> Help text</small></span>
+                                                </label>
+                                            </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="c21"&gt;    
+        &lt;span&gt; Label1 &lt;/span&gt;
+        &lt;input type="checkbox" name="check1" id="c21" value="1" checked&gt;
+        &lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c22"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;    
+        &lt;input type="checkbox" name="check2" id="c22" value="2"&gt;
+        &lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c23"&gt;   
+        &lt;span&gt; Label3 &lt;/span&gt; 
+        &lt;input type="checkbox" name="check3" id="c23" value="3"&gt;
+        &lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+
+
+    &lt;label for="r21"&gt;    
+        &lt;span&gt; Label1 &lt;/span&gt;
+        &lt;input type="radio" name="radio1" id="r21" value="option1"&gt;
+        &lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r22"&gt;    
+        &lt;span&gt; Label2 &lt;/span&gt;
+        &lt;input type="radio" name="radio1" id="r22" value="option1" checked&gt;
+        &lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r23"&gt;    
+        &lt;span&gt; Label3 &lt;/span&gt;
+        &lt;input type="radio" name="radio1" id="r23" value="option1"&gt;
+        &lt;span&gt;&lt;small&gt; Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        </div>
+                                        <div class="fl-box4">
+                                            <form action="#" method="post" name="example_form">
+                                                <label for="c31">    
+                                                    <input type="checkbox" name="check1" id="c31" value="1" checked>
+                                                    <span> Label1 </span><br/><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c32">    
+                                                    <input type="checkbox" name="check2" id="c32" value="2">
+                                                    <span> Label2 </span><br/><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c33">    
+                                                    <input type="checkbox" name="check3" id="c33" value="3">
+                                                    <span> Label3 </span><br/><span><small> Help text </small></span>
+                                                </label>
+
+
+                                                <label for="r31">    
+                                                    <input type="radio" name="radio1" id="r31" value="option1">
+                                                    <span> Label1 </span><br/><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r32">    
+                                                    <input type="radio" name="radio1" id="r32" value="option1" checked>
+                                                    <span> Label2 </span><br/><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r33">    
+                                                    <input type="radio" name="radio1" id="r33" value="option1">
+                                                    <span> Label3 </span><br/><span><small> Help text</small></span>
+                                                </label>
+                                            </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="c31"&gt;    
+        &lt;input type="checkbox" name="check1" id="c31" value="1" checked&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c32"&gt;    
+        &lt;input type="checkbox" name="check2" id="c32" value="2"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c33"&gt;    
+        &lt;input type="checkbox" name="check3" id="c33" value="3"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+
+
+    &lt;label for="r31"&gt;    
+        &lt;input type="radio" name="radio1" id="r31" value="option1"&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r32"&gt;    
+        &lt;input type="radio" name="radio1" id="r32" value="option1" checked&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r33"&gt;    
+        &lt;input type="radio" name="radio1" id="r33" value="option1"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;&lt;small&gt; Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                        </div>
+                                    </fieldset>
+                                    
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Image radio</legend>
+                                        <span class="radio_image">
+                                            <label for="ir31">    
+                                                <input type="radio" name="radio1" id="ir31" value="option1" checked>
+                                                <img src="images/avatar.png" alt="avatar">
+                                            </label>
+                                            <label for="ir32" class="">    
+                                                <input type="radio" name="radio1" id="ir32" value="option1">
+                                                <img src="images/wolf.jpg" alt="wolf">
+                                            </label>
+                                            <label for="ir33">    
+                                                <input type="radio" name="radio1" id="ir33" value="option1">
+                                                <img src="images/avatar.png" alt="avatar2">
+                                            </label>
+                                        </span><br/>
+<pre><code>
+&lt;span class="radio_image"&gt;
+    &lt;label for="ir31"&gt;    
+        &lt;input type="radio" name="radio1" id="ir31" value="option1" checked&gt;
+        &lt;img src="images/avatar.png" alt="avatar"&gt;
+    &lt;/label&gt;
+    &lt;label for="ir32" class=""&gt;    
+        &lt;input type="radio" name="radio1" id="ir32" value="option1"&gt;
+        &lt;img src="images/wolf.jpg" alt="wolf"&gt;
+    &lt;/label&gt;
+    &lt;label for="ir33"&gt;    
+        &lt;input type="radio" name="radio1" id="ir33" value="option1"&gt;
+        &lt;img src="images/avatar.png" alt="avatar2"&gt;
+    &lt;/label&gt;
+&lt;/span&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Contextual color checkbox and radio</legend>
+                                            <form action="#" method="post" name="example_form">
+                                                <label for="c111" class="_danger">    
+                                                    <input type="checkbox" name="check1" id="c111" value="1" checked>
+                                                    <span> Label1 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c112" class="_success">    
+                                                    <input type="checkbox" name="check2" id="c112" value="2">
+                                                    <span> Label2 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c113" class="_warning">    
+                                                    <input type="checkbox" name="check3" id="c113" value="3">
+                                                    <span> Label3 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c114" class="_info">    
+                                                    <input type="checkbox" name="check1" id="c114" value="1" checked>
+                                                    <span> Label1 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="c115" class="_disabled">    
+                                                    <input type="checkbox" name="check2" id="c115" value="2" disabled>
+                                                    <span> Label2 </span><span><small> disabled can also be used as a readonly </small></span>
+                                                </label>
+                                                <label for="c116" class="_disabled">    
+                                                    <input type="checkbox" name="check2" id="c116" value="2" disabled checked>
+                                                    <span> Label2 </span><span><small> disabled can also be used as a readonly </small></span>
+                                                </label>
+                                                <hr>
+                                                <label for="r111" class="_danger">    
+                                                    <input type="radio" name="radio1" id="r111" value="option1">
+                                                    <span> Label1 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r112" class="_success">    
+                                                    <input type="radio" name="radio1" id="r112" value="option1" checked>
+                                                    <span> Label2 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r113" class="_warning">    
+                                                    <input type="radio" name="radio1" id="r113" value="option1">
+                                                    <span> Label3 </span><span><small> Help text</small></span>
+                                                </label>
+                                                <label for="r114" class="_info">    
+                                                    <input type="radio" name="radio1" id="r114" value="option1">
+                                                    <span> Label2 </span><span><small> Help text </small></span>
+                                                </label>
+                                                <label for="r115" class="_disabled">    
+                                                    <input type="radio" name="radio1" id="r115" value="option1" disabled>
+                                                    <span> Label3 </span><span><small> Help text</small></span>
+                                                </label>
+                                            </form><br/>
+<pre><code>
+&lt;form action="#" method="post" name="example_form"&gt;
+    &lt;label for="c111" class="_danger"&gt;    
+        &lt;input type="checkbox" name="check1" id="c111" value="1" checked&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c112" class="_success"&gt;    
+        &lt;input type="checkbox" name="check2" id="c112" value="2"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c113" class="_warning"&gt;    
+        &lt;input type="checkbox" name="check3" id="c113" value="3"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c114" class="_info"&gt;    
+        &lt;input type="checkbox" name="check1" id="c114" value="1" checked&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c115" class="_disabled"&gt;    
+        &lt;input type="checkbox" name="check2" id="c115" value="2" disabled&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; disabled can also be used as a readonly &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="c116" class="_disabled"&gt;    
+        &lt;input type="checkbox" name="check2" id="c116" value="2" disabled checked&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; disabled can also be used as a readonly &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;hr&gt;
+    &lt;label for="r111" class="_danger"&gt;    
+        &lt;input type="radio" name="radio1" id="r111" value="option1"&gt;
+        &lt;span&gt; Label1 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r112" class="_success"&gt;    
+        &lt;input type="radio" name="radio1" id="r112" value="option1" checked&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r113" class="_warning"&gt;    
+        &lt;input type="radio" name="radio1" id="r113" value="option1"&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r114" class="_info"&gt;    
+        &lt;input type="radio" name="radio1" id="r114" value="option1"&gt;
+        &lt;span&gt; Label2 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text &lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label for="r115" class="_disabled"&gt;    
+        &lt;input type="radio" name="radio1" id="r115" value="option1" disabled&gt;
+        &lt;span&gt; Label3 &lt;/span&gt;&lt;span&gt;&lt;small&gt; Help text&lt;/small&gt;&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                                    </fieldset>
+                                    
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Basic buttons</legend>
+                                        <button name="test" value="button">button</button>
+                                        <input type="button" name="save" value="Save">
+                                        <input type="reset" value="Reset">
+                                        <input type="submit" value="Submit">
+                                        <div class="button">.button</div>
+                                        <a href="#" class="button"><span class="i-download"> Downloads</span></a>
+                                        <a href="#" class="button_link"><span class="i-upload"> Uploads</span></a>
+                                        <input type="image" src="images/save.png" alt="image save" name="save"><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save"&gt;
+&lt;input type="reset" value="Reset"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;div class="button"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button"&gt;&lt;span class="i-download"&gt; Downloads&lt;/span&gt;&lt;/a&gt;
+&lt;a href="#" class="button_link"&gt;&lt;span class="i-upload"&gt; Uploads&lt;/span&gt;&lt;/a&gt;
+&lt;input type="image" src="images/save.png" alt="image save" name="save"&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Contextual button colors</legend>
+                                        <button name="test" value="button" class="_danger">button</button>
+                                        <input type="button" name="save" value="Save" class="_danger">
+                                        <input type="reset" value="Reset" class="_danger">
+                                        <input type="submit" value="Submit" class="_danger">
+                                        <div class="button_danger">.button</div>
+                                        <a href="#" class="button_danger">Downloads</a>
+                                        <a href="#" class="button_link_danger">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="_danger"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="_danger"&gt;
+&lt;input type="reset" value="Reset" class="_danger"&gt;
+&lt;input type="submit" value="Submit" class="_danger"&gt;
+&lt;div class="button_danger"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button_danger"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link_danger"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button" class="_info">button</button>
+                                        <input type="button" name="save" value="Save" class="_info">
+                                        <input type="reset" value="Reset" class="_info">
+                                        <input type="submit" value="Submit" class="_info">
+                                        <div class="button_info">.button</div>
+                                        <a href="#" class="button_info">Downloads</a>
+                                        <a href="#" class="button_link_info">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="_info"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="_info"&gt;
+&lt;input type="reset" value="Reset" class="_info"&gt;
+&lt;input type="submit" value="Submit" class="_info"&gt;
+&lt;div class="button_info"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button_info"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link_info"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button" class="_warning">button</button>
+                                        <input type="button" name="save" value="Save" class="_warning">
+                                        <input type="reset" value="Reset" class="_warning">
+                                        <input type="submit" value="Submit" class="_warning">
+                                        <div class="button_warning">.button</div>
+                                        <a href="#" class="button_warning">Downloads</a>
+                                        <a href="#" class="button_link_warning">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="_warning"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="_warning"&gt;
+&lt;input type="reset" value="Reset" class="_warning"&gt;
+&lt;input type="submit" value="Submit" class="_warning"&gt;
+&lt;div class="button_warning"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button_warning"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link_warning"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button" class="_success">button</button>
+                                        <input type="button" name="save" value="Save" class="_success">
+                                        <input type="reset" value="Reset" class="_success">
+                                        <input type="submit" value="Submit" class="_success">
+                                        <div class="button_success">.button</div>
+                                        <a href="#" class="button_success">Downloads</a>
+                                        <a href="#" class="button_link_success">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="_success"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="_success"&gt;
+&lt;input type="reset" value="Reset" class="_success"&gt;
+&lt;input type="submit" value="Submit" class="_success"&gt;
+&lt;div class="button_success"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button_success"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link_success"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button" class="_disabled" disabled>button</button>
+                                        <input type="button" name="save" value="Save" class="_disabled" disabled>
+                                        <input type="reset" value="Reset" class="_disabled" disabled>
+                                        <input type="submit" value="Submit" class="_disabled" disabled>
+                                        <div class="button_disabled">.button</div>
+                                        <a href="#" class="button_disabled">Downloads</a>
+                                        <a href="#" class="button_link_disabled">Uploads</a>
+                                        <input type="image" src="images/save.png" alt="image save" name="save" class="_disabled" disabled><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="_disabled" disabled&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="_disabled" disabled&gt;
+&lt;input type="reset" value="Reset" class="_disabled" disabled&gt;
+&lt;input type="submit" value="Submit" class="_disabled" disabled&gt;
+&lt;div class="button_disabled"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button_disabled"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link_disabled"&gt;Uploads&lt;/a&gt;
+&lt;input type="image" src="images/save.png" alt="image save" name="save" class="_disabled" disabled&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Button sizes</legend>
+                                        <button name="test" value="button"  class="size_xxs">button</button>
+                                        <input type="button" name="save" value="Save" class="size_xxs">
+                                        <input type="reset" value="Reset" class="size_xxs">
+                                        <input type="submit" value="Submit" class="size_xxs">
+                                        <div class="button size_xxs">.button</div>
+                                        <a href="#" class="button size_xxs">Downloads</a>
+                                        <a href="#" class="button_link size_xxs">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_xxs"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_xxs"&gt;
+&lt;input type="reset" value="Reset" class="size_xxs"&gt;
+&lt;input type="submit" value="Submit" class="size_xxs"&gt;
+&lt;div class="button size_xxs"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_xxs"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_xxs"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_xs">button</button>
+                                        <input type="button" name="save" value="Save" class="size_xs">
+                                        <input type="reset" value="Reset" class="size_xs">
+                                        <input type="submit" value="Submit" class="size_xs">
+                                        <div class="button size_xs">.button</div>
+                                        <a href="#" class="button size_xs">Downloads</a>
+                                        <a href="#" class="button_link size_xs">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_xs"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_xs"&gt;
+&lt;input type="reset" value="Reset" class="size_xs"&gt;
+&lt;input type="submit" value="Submit" class="size_xs"&gt;
+&lt;div class="button size_xs"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_xs"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_xs"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_s">button</button>
+                                        <input type="button" name="save" value="Save" class="size_s">
+                                        <input type="reset" value="Reset" class="size_s">
+                                        <input type="submit" value="Submit" class="size_s">
+                                        <div class="button size_s">.button</div>
+                                        <a href="#" class="button size_s">Downloads</a>
+                                        <a href="#" class="button_link size_s">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_s"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_s"&gt;
+&lt;input type="reset" value="Reset" class="size_s"&gt;
+&lt;input type="submit" value="Submit" class="size_s"&gt;
+&lt;div class="button size_s"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_s"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_s"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_m">button</button>
+                                        <input type="button" name="save" value="Save" class="size_m">
+                                        <input type="reset" value="Reset" class="size_m">
+                                        <input type="submit" value="Submit" class="size_m">
+                                        <div class="button size_m">.button</div>
+                                        <a href="#" class="button size_m">Downloads</a>
+                                        <a href="#" class="button_link size_m">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_m"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_m"&gt;
+&lt;input type="reset" value="Reset" class="size_m"&gt;
+&lt;input type="submit" value="Submit" class="size_m"&gt;
+&lt;div class="button size_m"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_m"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_m"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_l">button</button>
+                                        <input type="button" name="save" value="Save" class="size_l">
+                                        <input type="reset" value="Reset" class="size_l">
+                                        <input type="submit" value="Submit" class="size_l">
+                                        <div class="button size_l">.button</div>
+                                        <a href="#" class="button size_l">Downloads</a>
+                                        <a href="#" class="button_link size_l">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_l"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_l"&gt;
+&lt;input type="reset" value="Reset" class="size_l"&gt;
+&lt;input type="submit" value="Submit" class="size_l"&gt;
+&lt;div class="button size_l"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_l"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_l"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_xl">button</button>
+                                        <input type="button" name="save" value="Save" class="size_xl">
+                                        <input type="reset" value="Reset" class="size_xl">
+                                        <input type="submit" value="Submit" class="size_xl">
+                                        <div class="button size_xl">.button</div>
+                                        <a href="#" class="button size_xl">Downloads</a>
+                                        <a href="#" class="button_link size_xl">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_xl"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_xl"&gt;
+&lt;input type="reset" value="Reset" class="size_xl"&gt;
+&lt;input type="submit" value="Submit" class="size_xl"&gt;
+&lt;div class="button size_xl"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_xl"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_xl"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                        <hr>
+                                        <button name="test" value="button"  class="size_xxl">button</button>
+                                        <input type="button" name="save" value="Save" class="size_xxl">
+                                        <input type="reset" value="Reset" class="size_xxl">
+                                        <input type="submit" value="Submit" class="size_xxl">
+                                        <div class="button size_xxl">.button</div>
+                                        <a href="#" class="button size_xxl">Downloads</a>
+                                        <a href="#" class="button_link size_xxl">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button"  class="size_xxl"&gt;button&lt;/button&gt;
+&lt;input type="button" name="save" value="Save" class="size_xxl"&gt;
+&lt;input type="reset" value="Reset" class="size_xxl"&gt;
+&lt;input type="submit" value="Submit" class="size_xxl"&gt;
+&lt;div class="button size_xxl"&gt;.button&lt;/div&gt;
+&lt;a href="#" class="button size_xxl"&gt;Downloads&lt;/a&gt;
+&lt;a href="#" class="button_link size_xxl"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Grid box buttons</legend>
+                                        <button name="test" value="button" class="box16">button</button><br/>
+                                        <input type="button" name="save" value="Save"  class="box4"><br/>
+                                        <input type="reset" value="Reset"  class="box8"><br/>
+                                        <input type="submit" value="Submit"  class="fc-box7"><br/>
+                                        <div class="button box1">.button</div><br/>
+                                        <a href="#" class="button box5">Downloads</a><br/>
+                                        <a href="#" class="button_link box3">Uploads</a><br/><br/>
+<pre><code>
+&lt;button name="test" value="button" class="box16"&gt;button&lt;/button&gt;&lt;br/&gt;
+&lt;input type="button" name="save" value="Save"  class="box4"&gt;&lt;br/&gt;
+&lt;input type="reset" value="Reset"  class="box8"&gt;&lt;br/&gt;
+&lt;input type="submit" value="Submit"  class="fc-box7"&gt;&lt;br/&gt;
+&lt;div class="button box1"&gt;.button&lt;/div&gt;&lt;br/&gt;
+&lt;a href="#" class="button box5"&gt;Downloads&lt;/a&gt;&lt;br/&gt;
+&lt;a href="#" class="button_link box3"&gt;Uploads&lt;/a&gt;
+</code></pre>
+                                    </fieldset>
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">Borders buttons</legend>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xxs radius3 fl-box4">button</a>
+                                            <a href="#" class="button size_xxs rounded3 fl-box4">button</a>
+                                            <a href="#" class="button size_xxs radius18 fl-box4">button</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xs radius5 fl-box4">save</a>
+                                            <a href="#" class="button size_xs rounded5 fl-box4">save</a>
+                                            <a href="#" class="button size_xs radius24 fl-box4">save</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_s radius7 fl-box4">cancel</a>
+                                            <a href="#" class="button size_s rounded7 fl-box4">cancel</a>
+                                            <a href="#" class="button size_s radius30 fl-box4">cancel</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_m radius9 fl-box4">close</a>
+                                            <a href="#" class="button size_m rounded9 fl-box4">close</a>
+                                            <a href="#" class="button size_m radius32 fl-box4">close</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_l radius12 fl-box4">.button</a>
+                                            <a href="#" class="button size_l rounded12 fl-box4">.button</a>
+                                            <a href="#" class="button size_l radius46 fl-box4">.button</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xl radius15 fl-box4">Downloads</a>
+                                            <a href="#" class="button size_xl rounded15 fl-box4">Downloads</a>
+                                            <a href="#" class="button size_xl radius58 fl-box4">Downloads</a>
+                                        </div>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xxl radius18 fl-box4">Upload</a>
+                                            <a href="#" class="button size_xxl rounded18 fl-box4">Upload</a>
+                                            <a href="#" class="button size_xxl radius70 fl-box4">Upload</a>
+                                        </div><br/>
+<pre><code>
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xxs radius3 fl-box4"&gt;button&lt;/a&gt;
+    &lt;a href="#" class="button size_xxs rounded3 fl-box4"&gt;button&lt;/a&gt;
+    &lt;a href="#" class="button size_xxs radius18 fl-box4"&gt;button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xs radius5 fl-box4"&gt;save&lt;/a&gt;
+    &lt;a href="#" class="button size_xs rounded5 fl-box4"&gt;save&lt;/a&gt;
+    &lt;a href="#" class="button size_xs radius24 fl-box4"&gt;save&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_s radius7 fl-box4"&gt;cancel&lt;/a&gt;
+    &lt;a href="#" class="button size_s rounded7 fl-box4"&gt;cancel&lt;/a&gt;
+    &lt;a href="#" class="button size_s radius30 fl-box4"&gt;cancel&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_m radius9 fl-box4"&gt;close&lt;/a&gt;
+    &lt;a href="#" class="button size_m rounded9 fl-box4"&gt;close&lt;/a&gt;
+    &lt;a href="#" class="button size_m radius32 fl-box4"&gt;close&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_l radius12 fl-box4"&gt;.button&lt;/a&gt;
+    &lt;a href="#" class="button size_l rounded12 fl-box4"&gt;.button&lt;/a&gt;
+    &lt;a href="#" class="button size_l radius46 fl-box4"&gt;.button&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xl radius15 fl-box4"&gt;Downloads&lt;/a&gt;
+    &lt;a href="#" class="button size_xl rounded15 fl-box4"&gt;Downloads&lt;/a&gt;
+    &lt;a href="#" class="button size_xl radius58 fl-box4"&gt;Downloads&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xxl radius18 fl-box4"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl rounded18 fl-box4"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl radius70 fl-box4"&gt;Upload&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+                                        <hr>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xxl r10 fl-box4">Upload</a>
+                                            <a href="#" class="button size_xxl r25 fl-box4">Upload</a>
+                                            <a href="#" class="button size_xxl r50 fl-box4">Upload</a>
+                                        </div><br/>
+<pre><code>
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xxl r10 fl-box4"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl r25 fl-box4"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl r50 fl-box4"&gt;Upload&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+                                        <hr>
+                                        <div class="fc-container">
+                                            <a href="#" class="button size_xxl radius18_left fl-box3">Upload</a>
+                                            <a href="#" class="button size_xxl radius18_right fl-box3">Upload</a>
+                                            <a href="#" class="button size_xxl radius18_top fl-box3">Upload</a>
+                                            <a href="#" class="button size_xxl radius18_bottom fl-box3">Upload</a>
+                                        </div><br/>
+<pre><code>
+&lt;div class="fc-container"&gt;
+    &lt;a href="#" class="button size_xxl radius18_left fl-box3"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl radius18_right fl-box3"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl radius18_top fl-box3"&gt;Upload&lt;/a&gt;
+    &lt;a href="#" class="button size_xxl radius18_bottom fl-box3"&gt;Upload&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+                                        <hr>
+                                        <div class="fc-container">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_xxs leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_xxs leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_xs leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_xs leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_s leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_s leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_m leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_m leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_l leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_l leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_xl leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_xl leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div class="fr-button-size_xxl leaf_left">leaf_left</div></td>
+                                                        <td><div class="button-size_xxl leaf_right">leaf_right</div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table><br/>
+<pre><code>
+&lt;table&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_xxs leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_xxs leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_xs leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_xs leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_s leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_s leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_m leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_m leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_l leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_l leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_xl leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_xl leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div class="fr-button-size_xxl leaf_left"&gt;leaf_left&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;div class="button-size_xxl leaf_right"&gt;leaf_right&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+                                        </div>
+                                        <div class="fc-container">
+                                            
+                                        </div>
+                                    </fieldset>
+                                    
+                                    
+                                    <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                        <legend class="size_m-rcorners9">multiple file input</legend>
+                                        <div  class="fl-container">
+                                            <form action="#" method="post">
+                                            <label  for="uploadBtn" class="files_input" >
+                                                <span class="button"><span class="icn_uarr2"> Choose Files</span></span>
+                                                <input type="file" id="uploadBtn" name="files" multiple>
+                                                <span id="noChosen"><br/><strong>Chosen files: </strong><br/><span>No file chosen</span></span>
+                                            </label> 
+                                            <button class="fl-offset1 _success" type="submit">Upload</button>
+                                            </form>
+                                        </div><br/>
+<pre><code>
+&lt;div  class="fl-container"&gt;
+    &lt;form action="#" method="post"&gt;
+    &lt;label  for="uploadBtn" class="files_input" &gt;
+        &lt;span class="button"&gt;&lt;span class="icn_uarr2"&gt; Choose Files&lt;/span&gt;&lt;/span&gt;
+        &lt;input type="file" id="uploadBtn" name="files" multiple&gt;
+        &lt;span id="noChosen"&gt;&lt;br/&gt;&lt;strong&gt;Chosen files: &lt;/strong&gt;&lt;br/&gt;&lt;span&gt;No file chosen&lt;/span&gt;&lt;/span&gt;
+    &lt;/label&gt; 
+    &lt;button class="fl-offset1 _success" type="submit"&gt;Upload&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </section>
+            
+                    <div class="clean"></div>
+                    </section>
+            
+                </section>
+            
+            <div class="clean"></div>
+            </section>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2017
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>

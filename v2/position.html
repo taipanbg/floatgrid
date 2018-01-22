@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>FloatGrid</title>
+        <title>Position - FloatGrid</title>
         <meta charset="UTF-8">
-        <meta name="description" content="FloatGrid is HTML and CSS grid for front-end developing responsive web projects for every device.">
-        <meta name="keywords" content="FloatGrid,Float,Grid">
+        <meta name="description" content="Position of elements in FloatGrid. Classes and examples.">
+        <meta name="keywords" content="Position,FloatGrid,Float,Grid">
         <meta name="author" content="Rosen Vlasev">
         <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
@@ -91,63 +91,85 @@
                 <!--<div class="acide" style="float: right;">
                     <div class="login_box" style="">
                         <div class="sLogin">
-                            <a href="./#">login</a>
+                            <a href="#">login</a>
                         </div>
                     </div>
                 </div>-->
             </header> 
+            
             <section id="schale" class="fc-container">
+            
                 <section id="wrapper" class="fl-container-box16">
+            
                     <section id="wrap" class="fc-container">
+            
                         <section id="content" class="fl-container-box16">
-                            <h2 class="txt_center">Responsive float grid for every device</h2>
-                            <div class="article">
-                                <div class="txt_center" style="padding-top:50px;">
-                                    <img src="img/responsive.jpg" alt="responsive gridfor every device" style="width:20%;min-width: 180px;">
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> is HTML and CSS grid<br> 
-                                            for front-end developing responsive web projects for every device.</div><br>
-                                    <!--<div style="font-size: 18px;"><strong>Floatgrid</strong> ist HTML- und CSS-Gitter<br> 
-                                            für Front-End-Entwicklung responsive Web-Projekte für jedes Gerät.</div><br>
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> е HTML и CSS мрежа<br> 
-                                            за front-end разработване на responsive уеб проекти за всяко устройство.</div><br>
-                                    <div style="font-size: 18px;"><strong>Floatgrid</strong> это HTML и CSS сеть<br> 
-                                            для front-end разработки responsive веб-проектов для каждого устройства.</div>-->
-                                </div>
-                                <div class="fc-container txt_center" style="padding-top:50px;">
-                                    <a href="./getting_started" class="button_info size_l radius5" style="margin-top:10px;">Getting started</a>
-                                    <a href="./downloads" class="button_success size_l radius5" style="margin-top:10px;">Download</a>
-                                </div>
-                                <div class="txt_center" style="padding-top:50px;">Cross-browser compatibility</div>
-                                <div class="responsive-table">
-                                    <table class="table_compact" style="padding-top:100px;margin:auto;width:162px;">
-                                        <tbody>
-                                            <tr>
-                                                <th colspan="5" style="text-align: center;"><img src="img/desktop-browser-logos.png" alt="chrome"></th>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">21</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">10</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">3.5</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">4.0</td>
-                                                <td style="text-align: center;font-size: 14px;width:20%;">10.5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+            
+                            <h2 class="txt_center">Position</h2>
+                            <div class="article fc-box12">
+                                <fieldset  style="padding:.5%;margin: .5%;" class="fl-container">
+                                    <legend class="size_m-rcorners9">The position Classes</legend>
+                                        <div class="container">
+                                            The position property specifies the type of positioning method used for an element.<br/><br/>
+                                            
+                                            There are four different position classes:<br/>
+                                            .static<br/>
+                                            .relative<br/>
+                                            .fixed<br/>
+                                            .absolute<br/><br/>
+                                            <div class="container bblock2 relative" style="height: 400px;">
+                                                <div class="absolute_top_left">absolute_top_left</div>
+                                                <div class="absolute_top_center">absolute_top_center</div>
+                                                <div class="absolute_top_right">absolute_top_right</div>
+                                                
+                                                <div class="absolute_left_center">absolute_left_center</div>
+                                                <div class="absolute_center">absolute_center</div>
+                                                <div class="absolute_right_center">absolute_right_center</div>
+                                                
+                                                <div class="absolute_bottom_left">absolute_bottom_left</div>
+                                                <div class="absolute_bottom_center">absolute_bottom_center</div>
+                                                <div class="absolute_bottom_right">absolute_bottom_right</div>
+                                            </div><br/>
+<pre><code>
+&lt;div class="container bblock2 relative" style="height: 400px;"&gt;
+    &lt;div class="absolute_top_left"&gt;absolute_top_left&lt;/div&gt;
+    &lt;div class="absolute_top_center"&gt;absolute_top_center&lt;/div&gt;
+    &lt;div class="absolute_top_right"&gt;absolute_top_right&lt;/div&gt;
+
+    &lt;div class="absolute_left_center"&gt;absolute_left_center&lt;/div&gt;
+    &lt;div class="absolute_center"&gt;absolute_center&lt;/div&gt;
+    &lt;div class="absolute_right_center"&gt;absolute_right_center&lt;/div&gt;
+
+    &lt;div class="absolute_bottom_left"&gt;absolute_bottom_left&lt;/div&gt;
+    &lt;div class="absolute_bottom_center"&gt;absolute_bottom_center&lt;/div&gt;
+    &lt;div class="absolute_bottom_right"&gt;absolute_bottom_right&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><br/>
+                                            <i class="box_info_infs"> Elements are then positioned using the top, bottom, left, and right properties. 
+                                            However, these properties will not work unless the position property is set first. 
+                                            They also work differently depending on the position value. <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">read more...</a></i>
+                                        </div>
+
+                                </fieldset>
                             </div>
                         </section>
+            
                     <div class="clean"></div>
                     </section>
+            
                 </section>
+            
             <div class="clean"></div>
             </section>
+            
         </div>
+            
         <div id="chr" style=""><div class="clean"></div></div>
         <div id="copyright"  style="z-index: 500;">
             <div style="background:#ECEFF1;text-align: center;font-size:10px">
-                Copyright (c) 2011-2018
+                Copyright (c) 2011-2017
             </div>
-        </div>
-        <script src="js/fxxxf_xwxxcx.js"></script>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
     </body>
 </html>

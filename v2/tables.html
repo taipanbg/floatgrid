@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="FloatGrid is HTML and CSS grid for front-end developing responsive web projects for every device.">
+        <meta name="keywords" content="FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel=icon href="./favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/floatgrid.css">
+        <link rel="stylesheet" href="./css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="./css/bgrey.css">
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="flexiblebasis" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./getting_started">Getting started</a></li>
+                                <li><a href="./documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="./responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./media_queries">Media Queries</a></li>
+                                                <li><a href="./visibility">Visibility</a></li>
+                                                <li><a href="./fluid">Fluid</a></li>
+                                                <li><a href="./grid">Grid basics</a></li>
+                                                <li><a href="./typography">Typography</a></li>
+                                                <li><a href="./element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./icons">Icons</a></li>
+                                                <li><a href="./forms">Forms</a></li>
+                                                <li><a href="./groups">Groups</a></li>
+                                                <li><a href="./borders">Borders</a></li>
+                                                <li><a href="./chips_badges">Chips and Badges</a></li>
+                                                <li><a href="./thumbnails">Images</a></li>
+                                                <li><a href="./contextual_colors">Contextual colors</a></li>
+                                                <li><a href="./progress">Progress bars</a></li>
+                                                <li><a href="./panels">Panels</a></li>
+                                                <li><a href="./tables">Tables</a></li>
+                                                <li><a href="./tooltip">Tooltip</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="./breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="./dividers">Dividers</a></li>
+                                                <li><a href="./clearfix">Clearfix</a></li>
+                                                <li><a href="./float">float</a></li>
+                                                <li><a href="./position">Position</a></li>
+                                                <li><a href="./padding">Padding</a></li>
+                                                <li><a href="./margin">Margin</a></li>
+                                                <li><a href="./vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <section id="schale" class="fc-container">
+            
+                <section id="wrapper" class="fl-container-box16">
+            
+                    <section id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Tables</h2>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Bordered tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Bordered tables width hover</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Bordered striped tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Bordered striped tables whit hover effect</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Compact tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table_compact">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table_compact"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Compact tables width hover</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl_compact">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl_compact"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Compact striped tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table_compact_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table_compact_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">Compact striped tables width hover</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl_compact_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl_compact_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="article">
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">default tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table_default">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table_default"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">default tables width hover</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl_default">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl_default"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">default striped tables</legend>
+                                        <div class="responsive_table">
+                                            <table class="table_default_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="table_default_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                                <div class="fc-box12">
+                                    <fieldset style="padding:.5%;margin: .5%;" class="fl-bblk0">
+                                        <legend class="bblk0-size_m-rounded9">default striped tables width hover</legend>
+                                        <div class="responsive_table">
+                                            <table class="tbl_default_striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>thead cell1</th>
+                                                        <th>thead cell2</th>
+                                                        <th>thead cell3</th>
+                                                        <th>thead cell4</th>
+                                                        <th>thead cell5</th>
+                                                        <th>thead cell6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>tfooter cell1</th>
+                                                        <th>tfooter cell2</th>
+                                                        <th>tfooter cell3</th>
+                                                        <th>tfooter cell4</th>
+                                                        <th>tfooter cell5</th>
+                                                        <th>tfooter cell6</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>row1 cell1</td>
+                                                        <td>row1 cell2</td>
+                                                        <td>row1 cell3</td>
+                                                        <td>row1 cell4</td>
+                                                        <td>row1 cell5</td>
+                                                        <td>row1 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row2 cell1</td>
+                                                        <td>row2 cell2</td>
+                                                        <td>row2 cell3</td>
+                                                        <td>row2 cell4</td>
+                                                        <td>row2 cell5</td>
+                                                        <td>row2 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row3 cell1</td>
+                                                        <td>row3 cell2</td>
+                                                        <td>row3 cell3</td>
+                                                        <td>row3 cell4</td>
+                                                        <td>row3 cell5</td>
+                                                        <td>row3 cell6</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>row4 cell1</td>
+                                                        <td>row4 cell2</td>
+                                                        <td>row4 cell3</td>
+                                                        <td>row4 cell4</td>
+                                                        <td>row4 cell5</td>
+                                                        <td>row4 cell6</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br>
+            <pre><code>
+&lt;table class="tbl_default_striped"&gt;
+    ....
+&lt;/table&gt;
+            </code></pre>
+                                    </fieldset>
+                                </div>
+                            </div>
+            
+                        </section>
+            
+                    <div class="clean"></div>
+                    </section>
+            
+                </section>
+            
+            <div class="clean"></div>
+            </section>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2017
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>
