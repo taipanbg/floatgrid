@@ -1,0 +1,609 @@
+
+/*
+ * Created on : 2011-01-25 09:17:01 AM
+ * Last modified : 2020-06-06 05:06:27 PM
+ * @author Rosen Vlasev (taipanbg)<rosen.vlasev@gmail.com>
+ * @copyright Copyright (c) 2011-2019
+ * 
+ * Template: f221f_1w23c4
+ * @version   0.1 beta
+ */
+
+/*#main{border: 3px solid red;background: white;}*/
+/*#schale{border: 3px solid aqua;background: white;}*/
+#header1,#header2,#footer1,#footer2{border: 1px solid blue;border-radius: 5px;background: white;padding:0;margin:0;}
+#header1{border-radius: 0;}
+#sidebar1,#sidebar2,#sidebar3,#sidebar4{border: 1px solid #000;background: white;}
+/*#wrapper{border: 1px solid green;background: white;}*/
+/*#wrap{border: 1px solid indigo;background: white;}*/
+#content{border: 1px solid orange;border-radius: 5px;background: white;}
+
+
+[class*="acide"],[class*="article"]{padding:5px;margin:auto;}
+            
+@media only screen and (min-width: 1600px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 5px;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: none;visibility: hidden;}
+        #main{padding-top: 50px;}  
+                    
+            /*schale*/
+            #schale{width: 80%;}
+            
+                /*sidebar1*/
+                #sidebar1{display: inline-block;position: static;z-index: 450;}
+                #stab1{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon1{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{display: inline-block;position: static;z-index: 450;}
+                            #stab3{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon3{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            
+                        /*content*/
+                        #content{display: inline-block;}
+            
+                            /*sidebar4*/
+                            #sidebar4{display: inline-block;position: static;z-index: 450;}
+                            #stab4{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon4{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{display: inline-block;position: static;z-index: 450;}
+                #stab2{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon2{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 5px;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: none;visibility: hidden;}
+        #main{padding-top: 50px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{display: inline-block;position: static;z-index: 450;}
+                #stab1{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon1{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{display: inline-block;position: static;z-index: 450;}
+                            #stab3{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon3{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            
+                        /*content*/
+                        #content{display: inline-block;}
+            
+                            /*sidebar4*/
+                            #sidebar4{display: inline-block;position: static;z-index: 450;}
+                            #stab4{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon4{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{display: inline-block;position: static;z-index: 450;}
+                #stab2{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon2{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 5px;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: none;visibility: hidden;}
+        #main{padding-top: 50px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{display: inline-block;position: static;z-index: 450;}
+                #stab1{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon1{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;}
+            
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{display: inline-block;position: static;z-index: 450;}
+                            #stab3{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon3{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            
+                        /*content*/
+                        #content{display: inline-block;}
+            
+                            /*sidebar4*/
+                            #sidebar4{display: inline-block;position: static;z-index: 450;}
+                            #stab4{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon4{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{display: inline-block;position: static;z-index: 450;}
+                #stab2{display: none;float:left;visibility: hidden;background: #aaa;}
+                #scon2{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 0;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: block;visibility: visible;}
+        #main{padding-top: 78px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar1:hover{width: 32px;padding: 0;}
+                #sidebar1:hover>#stab1{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar1:hover>#scon1,#scon1:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab1{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab1 div{width: 100%}
+                #scon1{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar1{left: 0;top: 50px;}
+                    #scon1{left: 0;}
+                
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;width: 100%;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{display: inline-block;position: static;z-index: 450;}
+                            #stab3{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon3{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+            
+                        /*content*/
+                        #content{display: inline-block;}
+            
+                            /*sidebar4*/
+                            #sidebar4{display: inline-block;position: static;z-index: 450;}
+                            #stab4{display: none;float:left;visibility: hidden;background: #aaa;}
+                            #scon4{display: inline-block;float:left;width: 100%;visibility: visible;background: #fff;}
+            
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar2:hover{width: 32px;padding: 0;}
+                #sidebar2:hover>#stab2{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar2:hover>#scon2,#scon2:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab2{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab2 div{width: 100%}
+                #scon2{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar2{right: 0;top: 50px;}
+                    #scon2{right: 0;}
+                
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 0;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: block;visibility: visible;}
+        #main{padding-top: 78px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar1:hover{width: 32px;padding: 0;}
+                #sidebar1:hover>#stab1{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar1:hover>#scon1,#scon1:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab1{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab1 div{width: 100%}
+                #scon1{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar1{left: 0;top: 50px;}
+                    #scon1{left: 0;}
+                
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;width: 100%;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar3:hover{width: 32px;padding: 0;}
+                            #sidebar3:hover>#stab3{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar3:hover>#scon3,#scon3:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                            #stab3{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab3 div{width: 100%;}
+                            #scon3{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+            
+                            #sidebar3{left: 32px;top: 50px;}
+                            #scon3{left: 0;}
+                
+                        /*content*/
+                        #content{display: inline-block;width: 100%;}
+            
+                            /*sidebar4*/
+                            #sidebar4{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar4:hover{width: 32px;padding: 0;}
+                            #sidebar4:hover>#stab4{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar4:hover>#scon4,#scon4:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                            #stab4{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab4 div{width: 100%;}
+                            #scon4{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                            #sidebar4{right: 32px;top: 50px;}
+                            #scon4{right: 0;}
+                
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar2:hover{width: 32px;padding: 0;}
+                #sidebar2:hover>#stab2{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar2:hover>#scon2,#scon2:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab2{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab2 div{width: 100%}
+                #scon2{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar2{right: 0;top: 50px;}
+                    #scon2{right: 0;}
+                
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 0;}
+        #header1 h1{display: none;visibility: hidden;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: block;visibility: visible;}
+        #main{padding-top: 78px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar1:hover{width: 32px;padding: 0;}
+                #sidebar1:hover>#stab1{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar1:hover>#scon1,#scon1:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab1{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab1 div{width: 100%}
+                #scon1{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar1{left: 0;top: 50px;}
+                    #scon1{left: 0;}
+                
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;width: 100%;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar3:hover{width: 32px;padding: 0;}
+                            #sidebar3:hover>#stab3{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar3:hover>#scon3,#scon3:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                            #stab3{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab3 div{width: 100%;}
+                            #scon3{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+            
+                            #sidebar3{left: 32px;top: 50px;}
+                            #scon3{left: 0;}
+                
+                        /*content*/
+                        #content{display: inline-block;width: 100%;}
+            
+                            /*sidebar4*/
+                            #sidebar4{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar4:hover{width: 32px;padding: 0;}
+                            #sidebar4:hover>#stab4{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar4:hover>#scon4,#scon4:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                            #stab4{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab4 div{width: 100%;}
+                            #scon4{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                            #sidebar4{right: 32px;top: 50px;}
+                            #scon4{right: 0;}
+                
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar2:hover{width: 32px;padding: 0;}
+                #sidebar2:hover>#stab2{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar2:hover>#scon2,#scon2:hover{display: inline-block;visibility: visible;position: fixed;width: 200px;margin-top: 23px;}
+                #stab2{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab2 div{width: 100%}
+                #scon2{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar2{right: 0;top: 50px;}
+                    #scon2{right: 0;}
+                
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (min-width: 180px) and (max-width: 320px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: fixed;top:0;left: 0;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 5px;}
+        #header1 h1{display: none;visibility: hidden;}
+            
+        #sidebartabs{width: 100%;float:none;height:24px;background: #aaa;z-index: 300;position: fixed;top:50px;display: block;visibility: visible;}
+        #main{padding-top: 78px;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar1:hover{width: 32px;padding: 0;}
+                #sidebar1:hover>#stab1{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar1:hover>#scon1,#scon1:hover{display: inline-block;visibility: visible;position: fixed;width: 100%;margin-top: 23px;}
+                #stab1{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab1 div{width: 100%}
+                #scon1{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar1{left: 0;top: 50px;}
+                    #scon1{left: 0;}
+                
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;width: 100%;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar3:hover{width: 32px;padding: 0;}
+                            #sidebar3:hover>#stab3{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar3:hover>#scon3,#scon3:hover{display: inline-block;visibility: visible;position: fixed;width: 100%;margin-top: 23px;}
+                            #stab3{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab3 div{width: 100%;}
+                            #scon3{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+            
+                            #sidebar3{left: 32px;top: 50px;}
+                            #scon3{left: 0;}
+                
+                        /*content*/
+                        #content{display: inline-block;width: 100%;}
+            
+                            /*sidebar4*/
+                            #sidebar4{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                            #sidebar4:hover{width: 32px;padding: 0;}
+                            #sidebar4:hover>#stab4{display: inline-block;visibility: visible;background: white;width: 100%;}
+                            #sidebar4:hover>#scon4,#scon4:hover{display: inline-block;visibility: visible;position: fixed;width: 100%;margin-top: 23px;}
+                            #stab4{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                            #stab4 div{width: 100%;}
+                            #scon4{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                            #sidebar4{right: 32px;top: 50px;}
+                            #scon4{right: 0;}
+                
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{float: none; display: inline-block; position: fixed;width: 32px;padding: 0;z-index: 450;}
+                #sidebar2:hover{width: 32px;padding: 0;}
+                #sidebar2:hover>#stab2{display: inline-block;visibility: visible;background: white;width: 100%;}
+                #sidebar2:hover>#scon2,#scon2:hover{display: inline-block;visibility: visible;position: fixed;width: 100%;margin-top: 23px;}
+                #stab2{display: inline-block;visibility: visible;width: 100%;float:left;background: #aaa;}
+                #stab2 div{width: 100%}
+                #scon2{overflow: auto;float:left;background: #fff;display: none;width: 100%;visibility: hidden;height: 100vh;padding-bottom: 150px;}
+            
+                    #sidebar2{right: 0;top: 50px;}
+                    #scon2{right: 0;}
+                
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:50px;}
+        #copyright {position: fixed;bottom: 0;left: 0;width: 100%;}
+            
+}
+        
+@media only screen and (max-width: 180px) {
+        
+        #main{width: 100%;}
+            /*header1*/
+        #header1{width: 100%;height: 50px;position: static;z-index: 500;}
+        #header1 .acide, #header1 .article{height: 50px;float: left;display: inline-block;padding: 0;}
+        #header1 h1{display: none;visibility: hidden;}
+        #main{padding-top: 0;}         
+
+        #sidebartabs{display: none;visibility: hidden;}
+        #main{padding-top: 0;}  
+                    
+            /*schale*/
+            #schale{width: 100%;}
+            
+                /*sidebar1*/
+                #sidebar1{display: none;visibility: hidden;}
+            
+                /*wraper*/
+                #wrapper{margin: 0;display: inline-block;width: 100%;}
+            
+                    /*header2*/
+                    #header2{width: 100%;}
+            
+                    /*wrap*/
+                    #wrap{width: 100%;}
+            
+                            /*sidebar3*/
+                            #sidebar3{display: none;visibility: hidden;}
+            
+            
+                        /*content*/
+                        #content{display: inline-block;width: 100%;}
+            
+                            /*sidebar4*/
+                            #sidebar4{display: none;visibility: hidden;}
+            
+                    /*footer2*/
+                    #footer2{width: 100%;}
+            
+                /*sidebar2*/
+                #sidebar2{display: none;visibility: hidden;}
+            
+            /*footer1*/
+            #footer1{width: 100%;} 
+            
+        /*copyright*/
+        #chr{margin-bottom:0;}
+        #copyright {position: static;width: 100%;}
+            
+}
+        
+/*===================== MENUS =============================*/
+@media only screen and (min-width: 1024px) {
+    /*======================== menuDefault =============================*/
+    [class*="menuDefault"] {background-color:transparent;/**/}
+    [class*="menuDefault"] li{background-color: #263238/*1*//*txt color for Light1,2,3*/ ;color: #ECEFF1/*Light*//*txt color for 1,2,3*/;}
+    [class*="menuDefault"] li li{background-color:#fff/*default background*//*default hover txt*/;color: #263238/*1*//*txt color for Light1,2,3*/;}
+    [class*="menuDefault"] li a {color: #ECEFF1/*Light*//*txt color for 1,2,3*/;}
+    [class*="menuDefault"] li li a {color: #263238/*1*//*txt color for Light1,2,3*/;}
+    [class*="menuDefault"] li li li a {color: #263238/*1*//*txt color for Light1,2,3*/;}
+    [class*="menuDefault"]>li:hover{background-color: #263238/*1*//*txt color for Light1,2,3*/;color: #ECEFF1/*Light*//*txt color for 1,2,3*/;}
+    /*-------------------------------------------------*/
+    [class*="menuDefault"] li ul {background-color: #fff/*default background*//*default hover txt*/;}
+    [class*="menuDefault"] li li ul {background-color: #fff/*default background*//*default hover txt*/;color:#000/*0*//*default hover txt color for Light1,2,3*/;}
+    [class*="menuDefault"] li li ul li{background-color: #fff/*default background*//*default hover txt*/;}
+    .menuDefault>li:hover{background-color: #37474F/*2*/ ;} 
+}
+@media only screen and (max-width: 1024px){
+    /*======================== menuDefault =============================*/
+    [class*="menuDefault"] {background-color: #263238/*1*//*txt color for Light1,2,3*/ ;;color: #ECEFF1/*Light*//*txt color for 1,2,3*/;}
+    [class*="menuDefault"] a{color: #ECEFF1/*Light*//*txt color for 1,2,3*/;}
+    [class*="menuDefault"] li{background-color: #263238/*1*//*txt color for Light1,2,3*/ ;}
+    [class*="menuDefault"] li:hover{background-color: #37474F/*2*/ ;}
+    [class*="menuDefault"] li li, [class*="menuMobile"] li ul{background-color: #37474F/*2*/ ;}
+    [class*="menuDefault"] li li:hover{background-color: #455A64/*3*/ ;}
+    [class*="menuDefault"] li li li, [class*="menuMobile"] li li ul{background-color: #455A64/*3*/ ;}
+    [class*="menuDefault"] li li li:hover{background-color: #546E7A/*4*/ ;}
+    [class*="menuDefault"] .opened{background-color: #37474F/*2*/ ;}
+    [class*="menuDefault"] .opened .opened{background: #455A64/*3*/ ;}
+    [class*="menuDefault"] .opened .opened .opened{background-color: #546E7A/*4*/ ;}
+}
+        

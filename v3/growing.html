@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Chips and Badges - FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Chips and Badges in FloatGrid. Classes and examples.">
+        <meta name="keywords" content="Chips and Badges,Chips,Badges,FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+         
+             
+         
+        <link rel=icon href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/floatgrid.css">
+        <link rel="stylesheet" href="css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="css/bgrey_indigoA_full.min.css">
+        <link rel="stylesheet" href="css/iconoset.css">
+        <style>
+            [class*="growth"]>*{border:1px solid #000;}
+        </style>
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="main" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="">Home</a></li>
+                                <li><a href="getting_started">Getting started</a></li>
+                                <li><a href="documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="media_queries">Media Queries</a></li>
+                                                <li><a href="visibility">Visibility</a></li>
+                                                <li><a href="fluid">Fluid</a></li>
+                                                <li><a href="growing">Growing</a></li>
+                                                <li><a href="grid">Grid basics</a></li>
+                                                <li><a href="typography">Typography</a></li>
+                                                <li><a href="element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="icons">Icons</a></li>
+                                                <li><a href="iconoset">Icons Font(iconoset)</a></li>
+                                                <li><a href="forms">Forms</a></li>
+                                                <li><a href="groups">Groups</a></li>
+                                                <li><a href="borders">Borders</a></li>
+                                                <li><a href="chips_badges">Chips and Badges</a></li>
+                                                <li><a href="images">Images</a></li>
+                                                <li><a href="contextual_colors">Contextual colors</a></li>
+                                                <li><a href="progress">Progress bars</a></li>
+                                                <li><a href="panels">Panels</a></li>
+                                                <li><a href="tables">Tables</a></li>
+                                                <li><a href="tooltip">Tooltip</a></li>
+                                                <li><a href="anchor">Anchor</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="dividers">Dividers</a></li>
+                                                <li><a href="clearfix">Clearfix</a></li>
+                                                <li><a href="float">float</a></li>
+                                                <li><a href="position">Position</a></li>
+                                                <li><a href="padding">Padding</a></li>
+                                                <li><a href="margin">Margin</a></li>
+                                                <li><a href="vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="templates">Templates</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="basic_layouts">Basic layouts</a></li>
+                                                <li><a href="landingpage">Landingpage layouts</a></li>
+                                                <li><a href="themes_colors">Themes colors</a></li>
+                                                <li><a href="themes_accent_colors">Themes accent</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="simple_examples">Examples</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="sample_intro">Intro</a></li>
+                                                <li><a href="sample_login">Login</a></li>
+                                                <li><a href="sample_articles">Articles</a></li>
+                                                <li><a href="sample_blog_news">Blog News</a></li>
+                                                <li><a href="sample_contacts">Contacts</a></li>
+                                                <li><a href="sample_statistics">Statistics</a></li>
+                                                <li><a href="sample_features">Features</a></li>
+                                                <li><a href="sample_slideshow">Slideshow</a></li>
+                                                <li><a href="sample_accordions_tabs_modal">Accordions,Tabs and Modal</a></li>
+                                                <li><a href="sample_shop">Shop</a></li>
+                                                <li><a href="sample_payment">Payment</a></li>
+                                                <li><a href="sample_boxes">Responsive boxes</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <div id="schale" class="fc-container">
+            
+                <div id="wrapper" class="fl-container-box36">
+            
+                    <div id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box36">
+            
+                            <h2 class="txt_center">Growing</h2>
+                            <hr>
+                            <div>
+                                Class <b>growth</b> има параметрите на container и е с default text-align:left;, но неговите child са inline-blocks.<br>
+                                Class <b>growth-left</b> има параметрите на container и е с text-align:left;, но неговите child са inline-blocks.<br>
+                            </div>
+                            <div class="fc-box24">
+                                <div class="growth" style="background: red;">
+                                    <div style="height: 100px;width:100px;background:#eee;">1</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">2</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">3</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">4</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">5</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">6</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">7</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">8</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">9</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">10</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">11</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">12</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">13</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">14</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">15</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">16</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">17</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">18</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">19</div>
+                                    <div style="height: 100px;width:100px;background:#eee;">20</div>
+                                </div>
+                            </div>
+<pre><code>
+&lt;div class="growth" style="background: red;"&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;1&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;2&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;3&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;4&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;5&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;6&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;7&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;8&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;9&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;10&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;11&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;12&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;13&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;14&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;15&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;16&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;17&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;18&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;19&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;20&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <div>
+                                Class <b>growth-center</b> има параметрите на container и е с text-align:center;, но неговите child са inline-blocks.<br> 
+                            </div>
+                            <div class="fc-box24">
+                                    <div class="growth-center" style="background: red;">
+                                        <div style="height: 100px;width:100px;background:#eee;">1</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">2</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">3</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">4</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">5</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">6</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">7</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">8</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">9</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">10</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">11</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">12</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">13</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">14</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">15</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">16</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">17</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">18</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">19</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">20</div>
+                                    </div>
+                            </div>
+                                
+<pre><code>
+&lt;div class="growth-center" style="background: red;"&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;1&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;2&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;3&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;4&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;5&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;6&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;7&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;8&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;9&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;10&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;11&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;12&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;13&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;14&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;15&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;16&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;17&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;18&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;19&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;20&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <div>
+                                Class <b>growth-right</b> има параметрите на container и е с text-align:right;, но неговите child са inline-blocks. 
+                            </div>
+                            <div class="fc-box24">
+                            <div class="growth-right" style="background: red;">
+                                        <div style="height: 100px;width:100px;background:#eee;">1</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">2</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">3</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">4</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">5</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">6</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">7</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">8</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">9</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">10</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">11</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">12</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">13</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">14</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">15</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">16</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">17</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">18</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">19</div>
+                                        <div style="height: 100px;width:100px;background:#eee;">20</div>
+                                    </div>
+                            </div>
+                                
+<pre><code>
+&lt;div class="growth-right" style="background: red;"&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;1&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;2&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;3&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;4&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;5&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;6&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;7&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;8&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;9&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;10&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;11&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;12&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;13&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;14&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;15&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;16&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;17&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;18&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;19&lt;/div&gt;
+    &lt;div style="height: 100px;width:100px;background:#eee;"&gt;20&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <div>
+                                Цифрата след growth<b>X</b> показва колко inline-blocks ще има на ред.<br>
+                                X=(min 2,max 36)
+                                <br>
+                                growth<b>X</b> е респонсив контейнер.
+                            </div>
+                            <div>
+                                <table class="table" style="margin:auto;">
+                                    <tr><th></th><th colspan="3">box per row</th></tr>
+                                    <tr><th>class</th><th>&gt;1024px</th><th>480-1024</th><th>&lt;480</th></tr>
+                                    <tr><td>growtd2</td><td>2</td><td>1</td><td>1</td></tr>
+                                    <tr><td></td><td>
+                                            <img src="img/growing/growth2_1.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth2_2.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth2_3.png" alt="image"/>
+                                        </td></tr>
+                                    <tr><td>growtd3</td><td>3</td><td>2</td><td>1</td></tr>
+                                    <tr><td></td><td>
+                                            <img src="img/growing/growth3_1.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth3_2.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth3_3.png" alt="image"/>
+                                        </td></tr>
+                                    <tr><td>growtd4</td><td>4</td><td>2</td><td>1</td></tr>
+                                    <tr><td></td><td>
+                                            <img src="img/growing/growth4_1.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth4_2.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth4_3.png" alt="image"/>
+                                        </td></tr>
+                                    <tr><td>growtd5</td><td>5</td><td>3</td><td>2</td></tr>
+                                    <tr><td></td><td>
+                                            <img src="img/growing/growth5_1.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth5_2.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth5_3.png" alt="image"/>
+                                        </td></tr>
+                                    <tr><td>growtd6</td><td>6</td><td>3</td><td>2</td></tr>
+                                    <tr><td></td><td>
+                                            <img src="img/growing/growth6_1.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth6_2.png" alt="image"/>
+                                        </td><td>
+                                            <img src="img/growing/growth6_3.png" alt="image"/>
+                                        </td></tr>
+                                    <tr><td>growtd7</td><td>7</td><td>4</td><td>2</td></tr>
+                                    <tr><td>growtd8</td><td>8</td><td>4</td><td>2</td></tr>
+                                    <tr><td>growtd9</td><td>9</td><td>5</td><td>3</td></tr>
+                                    <tr><td>growtd10</td><td>10</td><td>5</td><td>3</td></tr>
+                                    <tr><td>growtd11</td><td>11</td><td>6</td><td>3</td></tr>
+                                    <tr><td>growtd12</td><td>12</td><td>6</td><td>3</td></tr>
+                                    <tr><td>growtd13</td><td>13</td><td>7</td><td>4</td></tr>
+                                    <tr><td>growtd14</td><td>14</td><td>7</td><td>4</td></tr>
+                                    <tr><td>growtd15</td><td>15</td><td>8</td><td>4</td></tr>
+                                    <tr><td>growtd16</td><td>16</td><td>8</td><td>4</td></tr>
+                                    <tr><td>growtd17</td><td>17</td><td>9</td><td>5</td></tr>
+                                    <tr><td>growtd18</td><td>18</td><td>9</td><td>5</td></tr>
+                                    <tr><td>growtd19</td><td>19</td><td>10</td><td>5</td></tr>
+                                    <tr><td>growtd20</td><td>20</td><td>10</td><td>5</td></tr>
+                                    <tr><td>growtd21</td><td>21</td><td>11</td><td>6</td></tr>
+                                    <tr><td>growtd22</td><td>22</td><td>11</td><td>6</td></tr>
+                                    <tr><td>growtd23</td><td>23</td><td>12</td><td>6</td></tr>
+                                    <tr><td>growtd24</td><td>24</td><td>12</td><td>6</td></tr>
+                                    <tr><td>growtd25</td><td>25</td><td>13</td><td>7</td></tr>
+                                    <tr><td>growtd26</td><td>26</td><td>13</td><td>7</td></tr>
+                                    <tr><td>growtd27</td><td>27</td><td>14</td><td>7</td></tr>
+                                    <tr><td>growtd28</td><td>28</td><td>14</td><td>7</td></tr>
+                                    <tr><td>growtd29</td><td>29</td><td>15</td><td>8</td></tr>
+                                    <tr><td>growtd30</td><td>30</td><td>15</td><td>8</td></tr>
+                                    <tr><td>growtd31</td><td>31</td><td>16</td><td>8</td></tr>
+                                    <tr><td>growtd32</td><td>32</td><td>16</td><td>8</td></tr>
+                                    <tr><td>growtd33</td><td>33</td><td>17</td><td>9</td></tr>
+                                    <tr><td>growtd34</td><td>34</td><td>17</td><td>9</td></tr>
+                                    <tr><td>growtd35</td><td>35</td><td>18</td><td>9</td></tr>
+                                    <tr><td>growtd36</td><td>36</td><td>18</td><td>9</td></tr>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="fc-box24">
+                                <div class="growth5" style="background: red;">
+                                    <div style="height: 100px;background:#eee;">1</div>
+                                    <div style="height: 100px;background:#eee;">2</div>
+                                    <div style="height: 100px;background:#eee;">3</div>
+                                    <div style="height: 100px;background:#eee;">4</div>
+                                    <div style="height: 100px;background:#eee;">5</div>
+                                    <div style="height: 100px;background:#eee;">6</div>
+                                    <div style="height: 100px;background:#eee;">7</div>
+                                    <div style="height: 100px;background:#eee;">8</div>
+                                    <div style="height: 100px;background:#eee;">9</div>
+                                </div>
+                            </div>
+<pre><code>
+&lt;div class="growth5" style="background: red;"&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;1&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;2&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;3&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;4&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;5&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;6&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;7&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;8&lt;/div&gt;
+    &lt;div style="height: 100px;background:#eee;"&gt;9&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                    
+                            
+            
+                        </section>
+            
+                    <div class="clean"></div>
+                    </div>
+            
+                </div>
+            
+            <div class="clean"></div>
+            </div>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2019
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>
+    </body>
+</html>

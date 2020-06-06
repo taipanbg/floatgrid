@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="FloatGrid is HTML and CSS grid for front-end developing responsive web projects for every device.">
+        <meta name="keywords" content="FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+         
+             
+         
+        <link rel=icon href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/floatgrid.css">
+        <link rel="stylesheet" href="css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="css/bgrey_indigoA_full.min.css">
+        <style>
+            /*=========================== Product ========================================*/
+        .product__content{
+            padding: 0 10%;
+        }
+.product__galery #product1,.product__galery #product2,.product__galery #product3,
+.product__galery #product4,.product__galery #product5,.product__galery #product6{ display: none;}
+.product__galery{
+    
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 180%;
+		background-color: transparent;
+	}
+        
+	.product__galery .product__img{
+		position: absolute;
+		width: 100%;
+	}
+        
+	.product__galery .product__img img{
+		width: inherit;
+		height: inherit;
+	}
+
+.product__galery #galery__nav{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+        bottom: 0;
+}
+
+.product__galery #galery__nav .tmbs{
+	/*position: relative;*/
+	transition: .4s;
+        padding: 0 !important;
+}
+.product__galery #galery__nav .tmbs img{
+	width: 100%;
+}
+
+.product__galery .product__img{z-index: -1;}
+
+	.product__galery #product1:checked ~ #product__pic1,
+	.product__galery #product2:checked ~ #product__pic2,
+	.product__galery #product3:checked ~ #product__pic3,
+	.product__galery #product4:checked ~ #product__pic4,
+	.product__galery #product5:checked ~ #product__pic5,
+	.product__galery #product6:checked ~ #product__pic6
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+        
+	.product__galery #product1:checked  ~  #galery__nav .tmb1,
+	.product__galery #product2:checked  ~  #galery__nav .tmb2,
+	.product__galery #product3:checked  ~  #galery__nav .tmb3,
+	.product__galery #product4:checked  ~  #galery__nav .tmb4,
+	.product__galery #product5:checked  ~  #galery__nav .tmb5,
+	.product__galery #product6:checked  ~  #galery__nav .tmb6
+	{ 
+            opacity: 0.8;
+        }
+        
+@keyframes scroll{
+	0%{opacity:.4;}
+	100%{opacity:1;}
+}
+[id*="color1size"] .sizeLabel:hover{
+    background: #ccc;
+}
+[id*="color1size"] input[type="radio"]:checked + label[class="sizeLabel"] {
+    background: #ccc;
+}
+@media (min-width: 1024px) {
+    .packet:hover{
+        position: absolute;
+        top: -20px;
+        background: #2196f3;
+        width: 100%;
+    }
+    .packet:hover ul{
+        padding: 20px 0;
+    }
+}
+.cart table{
+    width:100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.cart table tr th{
+    text-align: center;
+    padding: 3px;
+}
+.cart table tr td{
+    padding: 3px;
+}
+.cart table tr td input{
+    max-width: 50px;
+    margin: auto;
+}
+        </style>
+            
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="main" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="">Home</a></li>
+                                <li><a href="getting_started">Getting started</a></li>
+                                <li><a href="documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="media_queries">Media Queries</a></li>
+                                                <li><a href="visibility">Visibility</a></li>
+                                                <li><a href="fluid">Fluid</a></li>
+                                                <li><a href="growing">Growing</a></li>
+                                                <li><a href="grid">Grid basics</a></li>
+                                                <li><a href="typography">Typography</a></li>
+                                                <li><a href="element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="icons">Icons</a></li>
+                                                <li><a href="iconoset">Icons Font(iconoset)</a></li>
+                                                <li><a href="forms">Forms</a></li>
+                                                <li><a href="groups">Groups</a></li>
+                                                <li><a href="borders">Borders</a></li>
+                                                <li><a href="chips_badges">Chips and Badges</a></li>
+                                                <li><a href="images">Images</a></li>
+                                                <li><a href="contextual_colors">Contextual colors</a></li>
+                                                <li><a href="progress">Progress bars</a></li>
+                                                <li><a href="panels">Panels</a></li>
+                                                <li><a href="tables">Tables</a></li>
+                                                <li><a href="tooltip">Tooltip</a></li>
+                                                <li><a href="anchor">Anchor</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="dividers">Dividers</a></li>
+                                                <li><a href="clearfix">Clearfix</a></li>
+                                                <li><a href="float">float</a></li>
+                                                <li><a href="position">Position</a></li>
+                                                <li><a href="padding">Padding</a></li>
+                                                <li><a href="margin">Margin</a></li>
+                                                <li><a href="vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="templates">Templates</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="basic_layouts">Basic layouts</a></li>
+                                                <li><a href="landingpage">Landingpage layouts</a></li>
+                                                <li><a href="themes_colors">Themes colors</a></li>
+                                                <li><a href="themes_accent_colors">Themes accent</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="simple_examples">Examples</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="sample_intro">Intro</a></li>
+                                                <li><a href="sample_login">Login</a></li>
+                                                <li><a href="sample_articles">Articles</a></li>
+                                                <li><a href="sample_blog_news">Blog News</a></li>
+                                                <li><a href="sample_contacts">Contacts</a></li>
+                                                <li><a href="sample_statistics">Statistics</a></li>
+                                                <li><a href="sample_features">Features</a></li>
+                                                <li><a href="sample_slideshow">Slideshow</a></li>
+                                                <li><a href="sample_accordions_tabs_modal">Accordions,Tabs and Modal</a></li>
+                                                <li><a href="sample_shop">Shop</a></li>
+                                                <li><a href="sample_payment">Payment</a></li>
+                                                <li><a href="sample_boxes">Responsive boxes</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <div id="schale" class="fc-container">
+            
+                <div id="wrapper" class="fl-container-box16">
+            
+                    <div id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Shop EXAMPLES</h2>
+                            <hr>
+                            <h3>Shop Example 1<br>(Catalog)</h3>
+                            <img class="thumbnail" src="img/sample/shop/products1.png" alt="image"/>
+                            <div class="container">
+                                <div class="fc-box24 pmfluid">
+                                    <div class="fl-box18 fluid-little">
+                                        <div class="fl-box18">
+                                            
+                                                <div class="fc-box32 txt_center brd100 radius10">
+                                                    <a href="img/image150x150.png"> 
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                    <form class="txt_center" action="" method="POST">
+                                                        <button class="size_m_success">ADD TO CART</button>
+                                                    </form>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                    <a href="img/image150x150.png"> 
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                    <form class="txt_center" action="" method="POST">
+                                                        <button class="size_m_success">ADD TO CART</button>
+                                                    </form>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-box18  fluid-little">
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                    <a href="img/image150x150.png"> 
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                    <form class="txt_center" action="" method="POST">
+                                                        <button class="size_m_success">ADD TO CART</button>
+                                                    </form>
+                                                </div>
+                                        </div>
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                    <a href="img/image150x150.png"> 
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                    </a>
+                                                    <form class="txt_center" action="" method="POST">
+                                                        <button class="size_m_success">ADD TO CART</button>
+                                                    </form>
+                                                </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="fl-box18 fluid-little">
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                    <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                    <h4>name Product 1 name<br></h4>
+                                                    <p>
+                                                        <span>
+                                                            <span><s>7.50</s></span>
+                                                            <span><s>EUR</s></span>
+                                                        </span>
+                                                        <span>
+                                                            <span><b>5.99</b></span>
+                                                            <span><b>EUR</b></span>
+                                                        </span>
+                                                    </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                    <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                    <h4>name Product 2 name<br></h4>
+                                                    <p>
+                                                        <span>
+                                                            <span><s>7.50</s></span>
+                                                            <span><s>EUR</s></span>
+                                                        </span>
+                                                        <span>
+                                                            <span><b>5.99</b></span>
+                                                            <span><b>EUR</b></span>
+                                                        </span>
+                                                    </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fl-box18  fluid-little">
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                    <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                    <h4>name Product 3 name<br></h4>
+                                                    <p>
+                                                        <span>
+                                                            <span><s>7.50</s></span>
+                                                            <span><s>EUR</s></span>
+                                                        </span>
+                                                        <span>
+                                                            <span><b>5.99</b></span>
+                                                            <span><b>EUR</b></span>
+                                                        </span>
+                                                    </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="fl-box18">
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 4 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid"&gt;
+        &lt;div class="fl-box18 fluid-little"&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;a href="img/image150x150.png"&gt;
+                    &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 1 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                        &lt;form class="txt_center" action="" method="POST"&gt;
+                            &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;a href="img/image150x150.png"&gt;
+                    &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 2 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                        &lt;form class="txt_center" action="" method="POST"&gt;
+                            &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box18  fluid-little"&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;a href="img/image150x150.png"&gt;
+                    &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 3 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                        &lt;form class="txt_center" action="" method="POST"&gt;
+                            &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;a href="img/image150x150.png"&gt;
+                    &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 4 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                        &lt;form class="txt_center" action="" method="POST"&gt;
+                            &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+        &lt;div class="fl-box18 fluid-little"&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 1 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 2 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box18  fluid-little"&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                        &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                        &lt;h4&gt;name Product 3 name&lt;br&gt;&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                            &lt;span&gt;
+                                &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box18"&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 4 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        <hr>
+                        <h3>Shop Example 2<br>(Catalog with inline blocks)</h3>
+                            <img class="thumbnail" src="img/sample/shop/products2.png" alt="image"/>
+                            <div class="container">
+                                <div class="fc-box24 pmfluid">
+                                    <div class="growth5">
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 2 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 3 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 4 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 5 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div> 
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 1 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 2 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 3 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 4 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="fc-box32 txt_center brd100 radius10">
+                                                <a href="img/image150x150.png">
+
+                                                        <span><img class="fc-box32" src="img/image150x150.png" alt="image"/></span>
+                                                        <h4>name Product 5 name<br></h4>
+                                                        <p>
+                                                            <span>
+                                                                <span><s>7.50</s></span>
+                                                                <span><s>EUR</s></span>
+                                                            </span>
+                                                            <span>
+                                                                <span><b>5.99</b></span>
+                                                                <span><b>EUR</b></span>
+                                                            </span>
+                                                        </p>
+
+                                                </a>
+                                                <form class="txt_center" action="" method="POST">
+                                                    <button class="size_m_success">ADD TO CART</button>
+                                                </form>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid"&gt;
+        &lt;div class="growth5"&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 1 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 2 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 3 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 4 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 5 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 1 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 2 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 3 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 4 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;div class="fc-box32 txt_center brd100 radius10"&gt;
+                    &lt;a href="img/image150x150.png"&gt;
+
+                            &lt;span&gt;&lt;img class="fc-box32" src="img/image150x150.png" alt="image"/&gt;&lt;/span&gt;
+                            &lt;h4&gt;name Product 5 name&lt;br&gt;&lt;/h4&gt;
+                            &lt;p&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                                &lt;span&gt;
+                                    &lt;span&gt;&lt;b&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                                    &lt;span&gt;&lt;b&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                                &lt;/span&gt;
+                            &lt;/p&gt;
+
+                    &lt;/a&gt;
+                    &lt;form class="txt_center" action="" method="POST"&gt;
+                        &lt;button class="size_m_success"&gt;ADD TO CART&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        <hr><h3>Shop Example 3<br>(Product page)</h3>
+                            <img class="thumbnail" src="img/sample/shop/product1.png" alt="image"/>
+                            <div class="container">
+                                <div class="fc-box18 pmfluid">
+                                    <div class="container product">
+                                        <form action="" method="POST">
+                                        <div class="fl-box9 pfluid">
+                                            <div class="product__galery">
+                                                <input type="radio" id="product1" name="images" value="white" checked="">
+                                                <input type="radio" id="product2" name="images" value="white">
+                                                <input type="radio" id="product3" name="images" value="red">
+                                                <input type="radio" id="product4" name="images" value="red">
+                                                <input type="radio" id="product5" name="images" value="green">
+                                                <input type="radio" id="product6" name="images" value="black">
+                                                <div class="product__img" id="product__pic1">
+                                                            <img src="img/banners/p01.jpg" alt="image"/>
+                                                </div>
+                                                <div class="product__img" id="product__pic2">
+                                                            <img src="img/banners/p02.jpg" alt="image"/>
+                                                </div>
+                                                <div class="product__img" id="product__pic3">
+                                                            <img src="img/banners/p03.jpg" alt="image"/>
+                                                </div>
+                                                <div class="product__img" id="product__pic4">
+                                                            <img src="img/banners/p04.jpg" alt="image"/>
+                                                </div>
+                                                <div class="product__img" id="product__pic5">
+                                                            <img src="img/banners/p05.jpg" alt="image"/>
+                                                </div>
+                                                <div class="product__img" id="product__pic6">
+                                                            <img src="img/banners/p06.jpg" alt="image"/>
+                                                </div>
+                                                <div id="galery__nav">
+                                                    <label for="product1" class="tmbs fl-box6 tmb1">
+                                                        <img src="img/banners/p01.jpg" alt="image"/>
+                                                    </label>
+                                                    <label for="product2" class="tmbs fl-box6 tmb2">
+                                                        <img src="img/banners/p02.jpg" alt="image"/>
+                                                    </label>
+                                                    <label for="product3" class="tmbs fl-box6 tmb3">
+                                                        <img src="img/banners/p03.jpg" alt="image"/>
+                                                    </label>
+                                                    <label for="product4" class="tmbs fl-box6 tmb4">
+                                                        <img src="img/banners/p04.jpg" alt="image"/>
+                                                    </label>
+                                                    <label for="product5" class="tmbs fl-box6 tmb5">
+                                                        <img src="img/banners/p05.jpg" alt="image"/>
+                                                    </label>
+                                                    <label for="product6" class="tmbs fl-box6 tmb6">
+                                                        <img src="img/banners/p06.jpg" alt="image"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    <div class="clean"></div>
+                                        </div>
+                                        <div class="fl-box27 pfluid product__content">
+                                            <h4 class="txt_center">Nike Hyper Quickness Mens Basketball Boots SD-15108144</h4>
+                                            <hr>
+                                            <p>price: 
+                                                <span>
+                                                    <span><s>7.50</s></span>
+                                                    <span><s>EUR</s></span>
+                                                </span>
+                                                <span style="color:red;">
+                                                    <span><b style="font-size: 200%;">5.99</b></span>
+                                                    <span><b style="">EUR</b></span>
+                                                </span>
+                                            </p>
+                                            <hr>
+                                            <div class="">
+                                                Nike Hyper Quickness Mens Basketball Boots These 
+                                                Nike Hyper Quickness Mens Basketball Boots are extremely 
+                                                lightweight and have been designed with a midfoot harness which 
+                                                when coupled with the lace up design ensures a secure fit, 
+                                                together with the Nike Zoo
+                                            </div>
+                                            <hr>
+                                            
+                                            <div>
+                                                <div>Pleace Select Color:</div>
+                                                <div class="container colorsArr">
+                                                    <label for="product1" class="tmbs fl-box3 tmb1">
+                                                        <img src="img/banners/p01.jpg" alt="image" style="width:100%"/>
+                                                    </label>
+                                                    <label for="product3" class="tmbs fl-box3 tmb3">
+                                                        <img src="img/banners/p03.jpg" alt="image" style="width:100%"/>
+                                                    </label>
+                                                    <label for="product5" class="tmbs fl-box3 tmb5">
+                                                        <img src="img/banners/p05.jpg" alt="image" style="width:100%"/>
+                                                    </label>
+                                                    <label for="product6" class="tmbs fl-box3 tmb6">
+                                                        <img src="img/banners/p06.jpg" alt="image" style="width:100%"/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <div>Pleace Select Size:</div>
+                                                <div class="container sizesArr" style="display: block;">
+                                                    <span id="color1size0">
+                                                        <input style="display: none;" type="radio" id="563" name="size" value="7">
+                                                        <label for="563" class="sizeLabel" id="color1size_7" style="display:inline-block;">7</label>
+                                                    </span>
+                                                    <span id="color1size1">
+                                                        <input style="display: none;" type="radio" id="564" name="size" value="8">
+                                                        <label for="564" class="sizeLabel" id="color1size_8" style="display:inline-block;">8</label>
+                                                    </span>
+                                                    <span id="color1size2">
+                                                        <input style="display: none;" type="radio" id="572" name="size" value="8.5">
+                                                        <label for="572" class="sizeLabel" id="color1size_8.5" style="display:inline-block;">8.5</label>
+                                                    </span>
+                                                    <span id="color1size3">
+                                                        <input style="display: none;" type="radio" id="565" name="size" value="9">
+                                                        <label for="565" class="sizeLabel" id="color1size_9" style="display:inline-block;">9</label>
+                                                    </span>
+                                                    <span id="color1size4">
+                                                        <input style="display: none;" type="radio" id="574" name="size" value="9.5">
+                                                        <label for="574" class="sizeLabel" id="color1size_9.5" style="display:inline-block;">9.5</label>
+                                                    </span>
+                                                    <span id="color1size5">
+                                                        <input style="display: none;" type="radio" id="566" name="size" value="10">
+                                                        <label for="566" class="sizeLabel" id="color1size_10" style="display:inline-block;">10</label>
+                                                    </span>
+                                                    <span id="color1size6">
+                                                        <input style="display: none;" type="radio" id="567" name="size" value="11">
+                                                        <label for="567" class="sizeLabel" id="color1size_11" style="display:inline-block;">11</label>
+                                                    </span>
+                                                    <span id="color1size7">
+                                                        <input style="display: none;" type="radio" id="568" name="size" value="12">
+                                                        <label for="568" class="sizeLabel" id="color1size_12" style="display:inline-block;">12</label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                Quantity: <input type="number" id="num" name="quantity" min="1" max="20" value="1">
+                                            </div>
+                                            <hr>
+                                            <div><input type="submit" class="size_xl txt_uppercase radius5" name="add" value="add to cart"></div>
+                                        </div>
+                                            
+                                            </form>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+    &lt;div class="fc-box18 pmfluid"&gt;
+        &lt;div class="container product"&gt;
+            &lt;form action="" method="POST"&gt;
+            &lt;div class="fl-box9 pfluid"&gt;
+                &lt;div class="product__galery"&gt;
+                    &lt;input type="radio" id="product1" name="images" value="white" checked=""&gt;
+                    &lt;input type="radio" id="product2" name="images" value="white"&gt;
+                    &lt;input type="radio" id="product3" name="images" value="red"&gt;
+                    &lt;input type="radio" id="product4" name="images" value="red"&gt;
+                    &lt;input type="radio" id="product5" name="images" value="green"&gt;
+                    &lt;input type="radio" id="product6" name="images" value="black"&gt;
+                    &lt;div class="product__img" id="product__pic1"&gt;
+                                &lt;img src="img/banners/p01.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div class="product__img" id="product__pic2"&gt;
+                                &lt;img src="img/banners/p02.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div class="product__img" id="product__pic3"&gt;
+                                &lt;img src="img/banners/p03.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div class="product__img" id="product__pic4"&gt;
+                                &lt;img src="img/banners/p04.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div class="product__img" id="product__pic5"&gt;
+                                &lt;img src="img/banners/p05.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div class="product__img" id="product__pic6"&gt;
+                                &lt;img src="img/banners/p06.jpg" alt="image"/&gt;
+                    &lt;/div&gt;
+                    &lt;div id="galery__nav"&gt;
+                        &lt;label for="product1" class="tmbs fl-box6" id="tmb1"&gt;
+                            &lt;img src="img/banners/p01.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product2" class="tmbs fl-box6" id="tmb2"&gt;
+                            &lt;img src="img/banners/p02.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product3" class="tmbs fl-box6" id="tmb3"&gt;
+                            &lt;img src="img/banners/p03.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product4" class="tmbs fl-box6" id="tmb4"&gt;
+                            &lt;img src="img/banners/p04.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product5" class="tmbs fl-box6" id="tmb5"&gt;
+                            &lt;img src="img/banners/p05.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product6" class="tmbs fl-box6" id="tmb6"&gt;
+                            &lt;img src="img/banners/p06.jpg" alt="image"/&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+        &lt;div class="clean"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box27 pfluid product__content"&gt;
+                &lt;h4 class="txt_center"&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/h4&gt;
+                &lt;hr&gt;
+                &lt;p&gt;price: 
+                    &lt;span&gt;
+                        &lt;span&gt;&lt;s&gt;7.50&lt;/s&gt;&lt;/span&gt;
+                        &lt;span&gt;&lt;s&gt;EUR&lt;/s&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                    &lt;span style="color:red;"&gt;
+                        &lt;span&gt;&lt;b style="font-size: 200%;"&gt;5.99&lt;/b&gt;&lt;/span&gt;
+                        &lt;span&gt;&lt;b style=""&gt;EUR&lt;/b&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/p&gt;
+                &lt;hr&gt;
+                &lt;div class=""&gt;
+                    Nike Hyper Quickness Mens Basketball Boots These 
+                    Nike Hyper Quickness Mens Basketball Boots are extremely 
+                    lightweight and have been designed with a midfoot harness which 
+                    when coupled with the lace up design ensures a secure fit, 
+                    together with the Nike Zoo
+                &lt;/div&gt;
+                &lt;hr&gt;
+
+                &lt;div&gt;
+                    &lt;div&gt;Pleace Select Color:&lt;/div&gt;
+                    &lt;div class="container colorsArr"&gt;
+                        &lt;label for="product1" class="tmbs fl-box3" id="tmb1"&gt;
+                            &lt;img src="img/banners/p01.jpg" alt="image" style="width:100%"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product3" class="tmbs fl-box3" id="tmb3"&gt;
+                            &lt;img src="img/banners/p03.jpg" alt="image" style="width:100%"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product5" class="tmbs fl-box3" id="tmb5"&gt;
+                            &lt;img src="img/banners/p05.jpg" alt="image" style="width:100%"/&gt;
+                        &lt;/label&gt;
+                        &lt;label for="product6" class="tmbs fl-box3" id="tmb6"&gt;
+                            &lt;img src="img/banners/p06.jpg" alt="image" style="width:100%"/&gt;
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;hr&gt;
+                &lt;div&gt;
+                    &lt;div&gt;Pleace Select Size:&lt;/div&gt;
+                    &lt;div class="container sizesArr" style="display: block;"&gt;
+                        &lt;span id="color1size0"&gt;
+                            &lt;input style="display: none;" type="radio" id="563" name="size" value="7"&gt;
+                            &lt;label for="563" class="sizeLabel" id="color1size_7" style="display:inline-block;"&gt;7&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size1"&gt;
+                            &lt;input style="display: none;" type="radio" id="564" name="size" value="8"&gt;
+                            &lt;label for="564" class="sizeLabel" id="color1size_8" style="display:inline-block;"&gt;8&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size2"&gt;
+                            &lt;input style="display: none;" type="radio" id="572" name="size" value="8.5"&gt;
+                            &lt;label for="572" class="sizeLabel" id="color1size_8.5" style="display:inline-block;"&gt;8.5&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size3"&gt;
+                            &lt;input style="display: none;" type="radio" id="565" name="size" value="9"&gt;
+                            &lt;label for="565" class="sizeLabel" id="color1size_9" style="display:inline-block;"&gt;9&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size4"&gt;
+                            &lt;input style="display: none;" type="radio" id="574" name="size" value="9.5"&gt;
+                            &lt;label for="574" class="sizeLabel" id="color1size_9.5" style="display:inline-block;"&gt;9.5&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size5"&gt;
+                            &lt;input style="display: none;" type="radio" id="566" name="size" value="10"&gt;
+                            &lt;label for="566" class="sizeLabel" id="color1size_10" style="display:inline-block;"&gt;10&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size6"&gt;
+                            &lt;input style="display: none;" type="radio" id="567" name="size" value="11"&gt;
+                            &lt;label for="567" class="sizeLabel" id="color1size_11" style="display:inline-block;"&gt;11&lt;/label&gt;
+                        &lt;/span&gt;
+                        &lt;span id="color1size7"&gt;
+                            &lt;input style="display: none;" type="radio" id="568" name="size" value="12"&gt;
+                            &lt;label for="568" class="sizeLabel" id="color1size_12" style="display:inline-block;"&gt;12&lt;/label&gt;
+                        &lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;hr&gt;
+                &lt;div&gt;
+                    Quantity: &lt;input type="number" id="num" name="quantity" min="1" max="20" value="1"&gt;
+                &lt;/div&gt;
+                &lt;hr&gt;
+                &lt;div&gt;&lt;input type="submit" class="size_xl txt_uppercase radius5" name="add" value="add to cart"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+                &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <h3>Shop Example 4<br>(Pricing)</h3>
+                            <img class="thumbnail" src="img/sample/shop/pricing1.png" alt="image"/>
+                            <div class="container">
+                                <div class="fc-box24 pmfluid">
+                                    <div class="growth4">
+                                        <div class="txt_center panel groupv">
+                                            <div class="panel_header txt_uppercase size_xl">
+                                                <h4 class="fc-box30 bgr_white radius5">PACKAGE 1</h4>
+                                            </div>
+                                            <div class="panel_element size_l">
+                                                <div class="size_xl">
+                                                    <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">2 EUR</div>
+                                                </div>
+                                                <ul>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                </ul>
+                                            <div>
+                                                <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                            </div>
+                                            </div>
+                                            <div class="panel_footer">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="txt_center panel groupv">
+                                            <div class="panel_header txt_uppercase size_xl">
+                                                <h4 class="fc-box30 bgr_white radius5">PACKAGE 2</h4>
+                                            </div>
+                                            <div class="panel_element size_l">
+                                                <div class="size_xl">
+                                                    <div class="size_m txt_uppercase radius5" style="border:5px solid #2196f3;display: inline-block">5 EUR</div>
+                                                </div>
+                                                <ul>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                </ul>
+                                            <div>
+                                                <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                            </div>
+                                            </div>
+                                            <div class="panel_footer">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="txt_center panel groupv">
+                                            <div class="panel_header txt_uppercase size_xl _info" style="background:#2196f3">
+                                                <h4 class="fc-box30 bgr_white radius5">PACKAGE 3</h4>
+                                            </div>
+                                            <div class="panel_element size_l">
+                                                <div class="size_xl">
+                                                    <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">9 EUR</div>
+                                                </div>
+                                                <ul>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                </ul>
+                                            <div>
+                                                <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                            </div>
+                                            </div>
+                                            <div class="panel_footer">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="txt_center panel groupv">
+                                            <div class="panel_header txt_uppercase size_xl">
+                                                <h4 class="fc-box30 bgr_white radius5">PACKAGE 4</h4>
+                                            </div>
+                                            <div class="panel_element size_l">
+                                                <div class="size_xl">
+                                                    <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">15 EUR</div>
+                                                </div>
+                                                <ul>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                    <li>text param text</li>
+                                                </ul>
+                                            <div>
+                                                <input type="submit" class="size_m txt_uppercase radius5 _info" name="add" value="add to cart">
+                                            </div>
+                                            </div>
+                                            <div class="panel_footer">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid"&gt;
+        &lt;div class="growth4"&gt;
+            &lt;div class="txt_center panel groupv"&gt;
+                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 1&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_element size_l"&gt;
+                    &lt;div class="size_xl"&gt;
+                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;2 EUR&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;div&gt;
+                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_footer"&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="txt_center panel groupv"&gt;
+                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 2&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_element size_l"&gt;
+                    &lt;div class="size_xl"&gt;
+                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #2196f3;display: inline-block"&gt;5 EUR&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;div&gt;
+                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_footer"&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="txt_center panel groupv"&gt;
+                &lt;div class="panel_header txt_uppercase size_xl _info" style="background:#2196f3"&gt;
+                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 3&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_element size_l"&gt;
+                    &lt;div class="size_xl"&gt;
+                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;9 EUR&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;div&gt;
+                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_footer"&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="txt_center panel groupv"&gt;
+                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 4&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_element size_l"&gt;
+                    &lt;div class="size_xl"&gt;
+                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;15 EUR&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                        &lt;li&gt;text param text&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;div&gt;
+                    &lt;input type="submit" class="size_m txt_uppercase radius5 _info" name="add" value="add to cart"&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="panel_footer"&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <h3>Shop Example 5<br>(Pricing)</h3>
+                            <img class="thumbnail" src="img/sample/shop/pricing2.png" alt="image"/>
+                            <div class="container">
+                                <div class="fc-box24 pmfluid">
+                                    <div class="conteiner" style="padding:50px 0;">
+                                        
+                                        <div class="fl-box9 txt_center panel groupv relative pmfluid">
+                                            <div class="packet groupv">
+                                                <div class="panel_header txt_uppercase size_xl">
+                                                    <h4 class="fc-box30 bgr_white radius5">PACKAGE 1</h4>
+                                                </div>
+                                                <div class="panel_element size_l">
+                                                    <div class="size_xl">
+                                                        <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">2 EUR</div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                    </ul>
+                                                <div>
+                                                    <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                                </div>
+                                                </div>
+                                                <div class="panel_footer">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fl-box9 txt_center panel groupv relative pmfluid">
+                                            <div class="packet groupv">
+                                                <div class="panel_header txt_uppercase size_xl">
+                                                    <h4 class="fc-box30 bgr_white radius5">PACKAGE 2</h4>
+                                                </div>
+                                                <div class="panel_element size_l">
+                                                    <div class="size_xl">
+                                                        <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">5 EUR</div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                    </ul>
+                                                <div>
+                                                    <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                                </div>
+                                                </div>
+                                                <div class="panel_footer">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fl-box9 txt_center panel groupv relative pmfluid">
+                                            <div class="packet groupv">
+                                                <div class="panel_header txt_uppercase size_xl">
+                                                    <h4 class="fc-box30 bgr_white radius5">PACKAGE 3</h4>
+                                                </div>
+                                                <div class="panel_element size_l">
+                                                    <div class="size_xl">
+                                                        <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">10 EUR</div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                    </ul>
+                                                <div>
+                                                    <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                                </div>
+                                                </div>
+                                                <div class="panel_footer">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fl-box9 txt_center panel groupv relative pmfluid">
+                                            <div class="packet groupv">
+                                                <div class="panel_header txt_uppercase size_xl">
+                                                    <h4 class="fc-box30 bgr_white radius5">PACKAGE 4</h4>
+                                                </div>
+                                                <div class="panel_element size_l">
+                                                    <div class="size_xl">
+                                                        <div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block">15 EUR</div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                        <li>text param text</li>
+                                                    </ul>
+                                                <div>
+                                                    <input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart">
+                                                </div>
+                                                </div>
+                                                <div class="panel_footer">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clean"></div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+                                &lt;div class="fc-box24 pmfluid"&gt;
+                                    &lt;div class="conteiner" style="padding:50px 0;"&gt;
+                                        
+                                        &lt;div class="fl-box9 txt_center panel groupv relative pmfluid"&gt;
+                                            &lt;div class="packet groupv"&gt;
+                                                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                                                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 1&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_element size_l"&gt;
+                                                    &lt;div class="size_xl"&gt;
+                                                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;2 EUR&lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;div&gt;
+                                                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                                                &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_footer"&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="fl-box9 txt_center panel groupv relative pmfluid"&gt;
+                                            &lt;div class="packet groupv"&gt;
+                                                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                                                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 2&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_element size_l"&gt;
+                                                    &lt;div class="size_xl"&gt;
+                                                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;5 EUR&lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;div&gt;
+                                                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                                                &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_footer"&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="fl-box9 txt_center panel groupv relative pmfluid"&gt;
+                                            &lt;div class="packet groupv"&gt;
+                                                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                                                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 3&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_element size_l"&gt;
+                                                    &lt;div class="size_xl"&gt;
+                                                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;10 EUR&lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;div&gt;
+                                                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                                                &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_footer"&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="fl-box9 txt_center panel groupv relative pmfluid"&gt;
+                                            &lt;div class="packet groupv"&gt;
+                                                &lt;div class="panel_header txt_uppercase size_xl"&gt;
+                                                    &lt;h4 class="fc-box30 bgr_white radius5"&gt;PACKAGE 4&lt;/h4&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_element size_l"&gt;
+                                                    &lt;div class="size_xl"&gt;
+                                                        &lt;div class="size_m txt_uppercase radius5" style="border:5px solid #ccc;display: inline-block"&gt;15 EUR&lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                        &lt;li&gt;text param text&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;div&gt;
+                                                    &lt;input type="submit" class="size_m txt_uppercase radius5" name="add" value="add to cart"&gt;
+                                                &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="panel_footer"&gt;
+
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="clean"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+</code></pre>
+                             <hr>
+                             <h3>Shop Example 6<br>(Cart)</h3>
+                            <img class="thumbnail" src="img/sample/shop/cart1.png" alt="image"/>
+                            <div class="container cart">
+                                <div class="fc-box18 pmfluid">
+                                    <div class="container">
+                                        <span style="display:inline-block;float: right;">
+                                            <span style="font-size:11px;margin:0;line-height: 0.5;">products: </span> 
+                                            <span style="font-size:11px;margin:0;line-height: 0.5;"> 4 </span><br/>
+                                            <span style="font-size:11px;margin:0;line-height: 0.5;">prices: </span>
+                                            <span style="font-size:11px;margin:0;line-height: 0.5;"> 149.95 EUR </span>
+                                        </span>
+                                        <span  style="float: right;padding:5px 5px 0 5px;" >
+                                            <img class="fr-box" src="img/shoping_cart1.png" alt="image"/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="fc-box18 pmfluid" style="background: #000;opacity: .7;color: #fff;">
+                                    <div style="text-align:right;padding: 3px;"><a href="" style="color: #fff;">X</a></div>
+                                    <h4 class="txt_center">Order Nr. : 17857</h4>
+                                    <table style="">
+                                        <tr>
+                                            <th style="border-bottom:1px solid #fff;">row</th>
+                                            <th style="border-bottom:1px solid #fff;">Product name</th>
+                                            <th style="border-bottom:1px solid #fff;">Unit price</th>
+                                            <th style="border-bottom:1px solid #fff;">Quantity</th>
+                                            <th style="border-bottom:1px solid #fff;">Total</th>
+                                            <th style="border-bottom:1px solid #fff;"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">2</td>
+                                            <td style="text-align:right;">71.98 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">1</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">1</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;">4</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;">delivery to address</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;">5.99 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:center;">1</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;">5.99 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;">5</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;">discount</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:center;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;">0.00 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="text-align:center;"></td>
+                                            <td style="text-align:right;"><b>149.95 EUR</b></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <div style="text-align:right;padding: 10px 5px;">
+                                        <span>Order Nr. : 17857</span>
+                                        <input class="button_success" type="submit" name="payment" value="Payment">
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container cart"&gt;
+    &lt;div class="fc-box18 pmfluid"&gt;
+        &lt;div class="container"&gt;
+            &lt;span style="display:inline-block;float: right;"&gt;
+                &lt;span style="font-size:11px;margin:0;line-height: 0.5;"&gt;products: &lt;/span&gt; 
+                &lt;span style="font-size:11px;margin:0;line-height: 0.5;"&gt; 4 &lt;/span&gt;&lt;br/&gt;
+                &lt;span style="font-size:11px;margin:0;line-height: 0.5;"&gt;prices: &lt;/span&gt;
+                &lt;span style="font-size:11px;margin:0;line-height: 0.5;"&gt; 149.95 EUR &lt;/span&gt;
+            &lt;/span&gt;
+            &lt;span  style="float: right;padding:5px 5px 0 5px;" &gt;
+                &lt;img class="fr-box" src="img/shoping_cart1.png" alt="image"/&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="fc-box18 pmfluid" style="background: #000;opacity: .7;color: #fff;"&gt;
+        &lt;div style="text-align:right;padding: 3px;"&gt;&lt;a href="" style="color: #fff;"&gt;X&lt;/a&gt;&lt;/div&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr. : 17857&lt;/h4&gt;
+        &lt;table style=""&gt;
+            &lt;tr&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;row&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Product name&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Unit price&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Quantity&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Total&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;2&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;71.98 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;1&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;1&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;4&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;delivery to address&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;"&gt;5.99 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:center;"&gt;1&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;"&gt;5.99 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;5&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;discount&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:right;"&gt;0.00 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #fff;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;&lt;b&gt;149.95 EUR&lt;/b&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div style="text-align:right;padding: 10px 5px;"&gt;
+            &lt;span&gt;Order Nr. : 17857&lt;/span&gt;
+            &lt;input class="button_success" type="submit" name="payment" value="Payment"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <h3>Shop Example 7<br>(Cart)</h3>
+                            <img class="thumbnail" src="img/sample/shop/cart1.png" alt="image"/>
+                            <div class="container cart">
+                                <div class="fc-box24 pmfluid">
+                                    <div style="text-align:right;padding: 3px;"><a href="" style="color: #fff;">X</a></div>
+                                    <h4 class="txt_center">Order Nr. : 17857</h4>
+                                    <table style="">
+                                        <tr>
+                                            <th style="border-bottom:1px solid #fff;text-align: left;">
+                                                <input type="checkbox" name="checkall" value="checkall" checked/>check all
+                                            </th>
+                                            <th style="border-bottom:1px solid #fff;"></th>
+                                            <th style="border-bottom:1px solid #fff;text-align: left;">Product</th>
+                                            <th style="border-bottom:1px solid #fff;">Unit price</th>
+                                            <th style="border-bottom:1px solid #fff;">Quantity</th>
+                                            <th style="border-bottom:1px solid #fff;">Total</th>
+                                            <th style="border-bottom:1px solid #fff;"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="1" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="2">
+                                            </td>
+                                            <td style="text-align:right;">71.98 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="2" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="1">
+                                            </td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="3" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="1">
+                                            </td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;">delivery to address</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;">5.99 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;">discount</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;">0.00 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="checkall" checked/>check all<br/>
+                                                <input type="submit" name="delete" value="delete all">
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="text-align:center;"></td>
+                                            <td style="text-align:right;"><b>149.95 EUR</b></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <div style="text-align:right;padding: 10px 5px;">
+                                        <span>Order Nr. : 17857</span>
+                                        <input class="button_success" type="submit" name="payment" value="Payment">
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container cart"&gt;
+    &lt;div class="fc-box24 pmfluid"&gt;
+        &lt;div style="text-align:right;padding: 3px;"&gt;&lt;a href="" style="color: #fff;"&gt;X&lt;/a&gt;&lt;/div&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr. : 17857&lt;/h4&gt;
+        &lt;table style=""&gt;
+            &lt;tr&gt;
+                &lt;th style="border-bottom:1px solid #fff;text-align: left;"&gt;
+                    &lt;input type="checkbox" name="checkall" value="checkall" checked/&gt;check all
+                &lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;text-align: left;"&gt;Product&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Unit price&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Quantity&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Total&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="1" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="2"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;71.98 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="2" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="1"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="3" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="1"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;delivery to address&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;5.99 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;discount&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;0.00 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="checkall" checked/&gt;check all&lt;br/&gt;
+                    &lt;input type="submit" name="delete" value="delete all"&gt;
+                &lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;&lt;b&gt;149.95 EUR&lt;/b&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div style="text-align:right;padding: 10px 5px;"&gt;
+            &lt;span&gt;Order Nr. : 17857&lt;/span&gt;
+            &lt;input class="button_success" type="submit" name="payment" value="Payment"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </section>
+            
+                    <div class="clean"></div>
+                    </div>
+            
+                </div>
+            
+            <div class="clean"></div>
+            </div>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2019
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>

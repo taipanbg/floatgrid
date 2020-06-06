@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FloatGrid</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="FloatGrid is HTML and CSS grid for front-end developing responsive web projects for every device.">
+        <meta name="keywords" content="FloatGrid,Float,Grid">
+        <meta name="author" content="Rosen Vlasev">
+         
+             
+         
+        <link rel=icon href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/floatgrid.css">
+        <link rel="stylesheet" href="css/fxxxf_xwxxcx.css">
+        <link rel="stylesheet" href="css/bgrey_indigoA_full.min.css">
+        <style>
+.cart table{
+    width:100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.cart table tr th{
+    text-align: center;
+    padding: 3px;
+}
+.cart table tr td{
+    padding: 3px;
+}
+.cart table tr td input{
+    max-width: 50px;
+    margin: auto;
+}
+.invoice table tr th{
+    background: #ddd;
+} 
+        </style>
+    </head>
+    <body style="padding: 0;margin: 0;">
+        <div id="main" class="fc-container">
+            <!--header-->
+            <header id="header1" class="fc-container">
+                <div class="acide" style="float: left;">
+                    <nav class="fbMenu">
+                        <div class="btnMenuCompact button radius5">
+                            <div class="icobox_xxl_menut"></div>
+                        </div>
+                        <div class="menu_vfb">
+                            <ul class="menuDefault">
+                                <li><a href="">Home</a></li>
+                                <li><a href="getting_started">Getting started</a></li>
+                                <li><a href="documentation">Documentation</a>
+                                    <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                        <div class="icobox_xl_menut"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a href="responsive_utilities">Responsive</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="media_queries">Media Queries</a></li>
+                                                <li><a href="visibility">Visibility</a></li>
+                                                <li><a href="fluid">Fluid</a></li>
+                                                <li><a href="growing">Growing</a></li>
+                                                <li><a href="grid">Grid basics</a></li>
+                                                <li><a href="typography">Typography</a></li>
+                                                <li><a href="element_sizing">Element sizing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="components">Components</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="icons">Icons</a></li>
+                                                <li><a href="iconoset">Icons Font(iconoset)</a></li>
+                                                <li><a href="forms">Forms</a></li>
+                                                <li><a href="groups">Groups</a></li>
+                                                <li><a href="borders">Borders</a></li>
+                                                <li><a href="chips_badges">Chips and Badges</a></li>
+                                                <li><a href="images">Images</a></li>
+                                                <li><a href="contextual_colors">Contextual colors</a></li>
+                                                <li><a href="progress">Progress bars</a></li>
+                                                <li><a href="panels">Panels</a></li>
+                                                <li><a href="tables">Tables</a></li>
+                                                <li><a href="tooltip">Tooltip</a></li>
+                                                <li><a href="anchor">Anchor</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="utilities">Utilities</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="breadcrumb">Breadcrumb</a></li>
+                                                <li><a href="dividers">Dividers</a></li>
+                                                <li><a href="clearfix">Clearfix</a></li>
+                                                <li><a href="float">float</a></li>
+                                                <li><a href="position">Position</a></li>
+                                                <li><a href="padding">Padding</a></li>
+                                                <li><a href="margin">Margin</a></li>
+                                                <li><a href="vertical_alignment">Vertical alignment</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="templates">Templates</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="basic_layouts">Basic layouts</a></li>
+                                                <li><a href="landingpage">Landingpage layouts</a></li>
+                                                <li><a href="themes_colors">Themes colors</a></li>
+                                                <li><a href="themes_accent_colors">Themes accent</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="simple_examples">Examples</a>
+                                            <div class="subMenu" style="border: 1px solid #ccc;display:inline-block;float:right;cursor: pointer;">
+                                                <div class="icobox_xl_menut"></div>
+                                            </div>
+                                            <ul>
+                                                <li><a href="sample_intro">Intro</a></li>
+                                                <li><a href="sample_login">Login</a></li>
+                                                <li><a href="sample_articles">Articles</a></li>
+                                                <li><a href="sample_blog_news">Blog News</a></li>
+                                                <li><a href="sample_contacts">Contacts</a></li>
+                                                <li><a href="sample_statistics">Statistics</a></li>
+                                                <li><a href="sample_features">Features</a></li>
+                                                <li><a href="sample_slideshow">Slideshow</a></li>
+                                                <li><a href="sample_accordions_tabs_modal">Accordions,Tabs and Modal</a></li>
+                                                <li><a href="sample_shop">Shop</a></li>
+                                                <li><a href="sample_payment">Payment</a></li>
+                                                <li><a href="sample_boxes">Responsive boxes</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="downloads">Downloads</a></li>
+                            </ul>
+                        </div>
+                        <div class="clean"></div>
+                    </nav>
+                </div>
+                <div class="article"><h1>Floatgrid</h1></div>
+                <!--<div class="acide" style="float: right;">
+                    <div class="login_box" style="">
+                        <div class="sLogin">
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                </div>-->
+            </header> 
+            
+            <div id="schale" class="fc-container">
+            
+                <div id="wrapper" class="fl-container-box16">
+            
+                    <div id="wrap" class="fc-container">
+            
+                        <section id="content" class="fl-container-box16">
+            
+                            <h2 class="txt_center">Payment EXAMPLES</h2>
+                        <hr>
+                        <h3>Payment Example 1<br>(Cart)</h3>
+                            <img class="thumbnail" src="img/sample/payment/cart1.png" alt="image"/>
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container cart">
+                                <div class="fc-box24 pmfluid">
+                                    <h4 class="txt_center">Order Nr. : 17857</h4>
+                                    <table style="">
+                                        <tr>
+                                            <th style="border-bottom:1px solid #fff;text-align: left;">
+                                                <input type="checkbox" name="checkall" value="checkall" checked/>check all
+                                            </th>
+                                            <th style="border-bottom:1px solid #fff;"></th>
+                                            <th style="border-bottom:1px solid #fff;text-align: left;">Product</th>
+                                            <th style="border-bottom:1px solid #fff;">Unit price</th>
+                                            <th style="border-bottom:1px solid #fff;">Quantity</th>
+                                            <th style="border-bottom:1px solid #fff;">Total</th>
+                                            <th style="border-bottom:1px solid #fff;"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="1" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="2">
+                                            </td>
+                                            <td style="text-align:right;">71.98 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="2" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="1">
+                                            </td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="3" checked/>
+                                            </td>
+                                            <td>
+                                                <img src="img/banners/p01.jpg" alt="image" style="width:100px;"/>
+                                            </td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">
+                                                <input type="number" min="1" max="999" value="1">
+                                            </td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td><input type="submit" name="delete" value="X"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;">delivery to address</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;">5.99 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;">discount</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"></td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;">0.00 EUR</td>
+                                            <td style="border-top:1px solid #fff;border-bottom:1px solid #000;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="checkall" value="checkall" checked/>check all<br/>
+                                                <input type="submit" name="delete" value="delete all">
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="text-align:center;"></td>
+                                            <td style="text-align:right;"><b>149.95 EUR</b></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <div style="text-align:right;padding: 10px 5px;">
+                                        <span>Order Nr. : 17857</span>
+                                        <input class="button_success" type="submit" name="payment" value="Payment">
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container cart"&gt;
+    &lt;div class="fc-box24 pmfluid"&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr. : 17857&lt;/h4&gt;
+        &lt;table style=""&gt;
+            &lt;tr&gt;
+                &lt;th style="border-bottom:1px solid #fff;text-align: left;"&gt;
+                    &lt;input type="checkbox" name="checkall" value="checkall" checked/&gt;check all
+                &lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;text-align: left;"&gt;Product&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Unit price&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Quantity&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;Total&lt;/th&gt;
+                &lt;th style="border-bottom:1px solid #fff;"&gt;&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="1" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="2"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;71.98 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="2" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="1"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="3" checked/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;img src="img/banners/p01.jpg" alt="image" style="width:100px;"/&gt;
+                &lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;
+                    &lt;input type="number" min="1" max="999" value="1"&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td&gt;&lt;input type="submit" name="delete" value="X"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;delivery to address&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;5.99 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;discount&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;text-align:right;"&gt;0.00 EUR&lt;/td&gt;
+                &lt;td style="border-top:1px solid #fff;border-bottom:1px solid #000;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;input type="checkbox" name="checkall" value="checkall" checked/&gt;check all&lt;br/&gt;
+                    &lt;input type="submit" name="delete" value="delete all"&gt;
+                &lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;&lt;b&gt;149.95 EUR&lt;/b&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div style="text-align:right;padding: 10px 5px;"&gt;
+            &lt;span&gt;Order Nr. : 17857&lt;/span&gt;
+            &lt;input class="button_success" type="submit" name="payment" value="Payment"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        <hr><h3>Payment Example 2<br>(Payment Method)</h3>
+                            <img class="thumbnail" src="img/sample/payment/payment1.png" alt="image"/>
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container">
+                                <div class="fc-box24 pmfluid pd5p">
+                                    <h4 class="txt_center">Order Nr. : 17857</h4>
+                                    <div>
+                                        <div style=" text-align: center;">
+                                            <input type="radio" name="payment_method" value="paypal" id="paypal" style="vertical-align: middle;">
+                                            <label for="paypal" style="display:inline-block;vertical-align: middle;">
+                                                <img class="thumbnail-radius10" src="img/paypal.jpg" alt="image"/>
+                                            </label>
+                                        </div>
+                                        <div style=" text-align: center;">
+                                            <input type="radio" name="payment_method" value="bank" id="credit_carte" style="vertical-align: middle;">
+                                            <label for="credit_carte" style="display:inline-block;vertical-align: middle;">
+                                                <img class="thumbnail-radius10" src="img/credit_carte.jpg" alt="image"/>
+                                            </label>
+                                        </div>
+                                        <div style=" text-align: center;">
+                                            <input type="radio" name="payment_method" value="bank" id="bank" style="vertical-align: middle;">
+                                            <label for="bank" style="display:inline-block;vertical-align: middle;">
+                                                <img class="thumbnail-radius10" src="img/bank_transfer.jpg" alt="image"/>
+                                            </label>
+                                        </div>
+                                        <div style=" text-align: center;">
+                                            <input class="button_success radius5" style="padding:5px 20px" type="submit" name="pay" value="Pay">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid pd5p"&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr. : 17857&lt;/h4&gt;
+        &lt;div&gt;
+            &lt;div style=" text-align: center;"&gt;
+                &lt;input type="radio" name="payment_method" value="paypal" id="paypal" style="vertical-align: middle;"&gt;
+                &lt;label for="paypal" style="display:inline-block;vertical-align: middle;"&gt;
+                    &lt;img class="thumbnail-radius10" src="img/paypal.jpg" alt="image"/&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div style=" text-align: center;"&gt;
+                &lt;input type="radio" name="payment_method" value="bank" id="credit_carte" style="vertical-align: middle;"&gt;
+                &lt;label for="credit_carte" style="display:inline-block;vertical-align: middle;"&gt;
+                    &lt;img class="thumbnail-radius10" src="img/credit_carte.jpg" alt="image"/&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div style=" text-align: center;"&gt;
+                &lt;input type="radio" name="payment_method" value="bank" id="bank" style="vertical-align: middle;"&gt;
+                &lt;label for="bank" style="display:inline-block;vertical-align: middle;"&gt;
+                    &lt;img class="thumbnail-radius10" src="img/bank_transfer.jpg" alt="image"/&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div style=" text-align: center;"&gt;
+                &lt;input class="button_success radius5" style="padding:5px 20px" type="submit" name="pay" value="Pay"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        <hr><h3>Payment Example 4<br>(Completed)</h3>
+                            <img class="thumbnail" src="img/sample/payment/payment3.png" alt="image"/>
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container">
+                                <div class="fc-box24 pmfluid pd5p">
+                                    <h4 class="txt_center">Order Nr. : 17857</h4>
+                                    <div>
+                                        <div class="fc-box radius50 _success" style=" border:3px solid; background: #bfb;width: 100px;height: 100px;text-align: center;">
+                                            <i class="size72_tick2"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="txt_center">
+                                                THANK YOU<br>
+                                                <small>Your payment has been accepted.</small>
+                                            </h4>
+                                        </div>
+                                        <div style=" text-align: center;">
+                                            <input class="button_success radius5" style="padding:5px 20px" type="submit" name="shop" value="Go in shop">
+                                            <input class="button_success radius5" style="padding:5px 20px" type="submit" name="invoice" value="View invoice">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #000;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid #ccc;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #ccc; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #ccc;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid pd5p"&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr. : 17857&lt;/h4&gt;
+        &lt;div&gt;
+            &lt;div class="fc-box radius50 _success" style=" border:3px solid; background: #bfb;width: 100px;height: 100px;text-align: center;"&gt;
+                &lt;i class="size72_tick2"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;h4 class="txt_center"&gt;
+                    THANK YOU&lt;br&gt;
+                    &lt;small&gt;Your payment has been accepted.&lt;/small&gt;
+                &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div style=" text-align: center;"&gt;
+                &lt;input class="button_success radius5" style="padding:5px 20px" type="submit" name="shop" value="Go in shop"&gt;
+                &lt;input class="button_success radius5" style="padding:5px 20px" type="submit" name="invoice" value="View invoice"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        <hr><h3>Payment Example 5<br>(Invoice)</h3>
+                            <img class="thumbnail" src="img/sample/payment/payment4_invois.png" alt="image"/>
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;">
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                
+                                <hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"></span>
+                                <hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;">
+                                <br>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Shopping Cart</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Payment Method</span>
+                                <span class="process__point hidden-mobile" style="display: inline-block;width: 10%;">Completed</span>
+                                <span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;">Invoice</span>
+                            </div>
+                            
+                            <div class="container">
+                                <div class="fc-box24 pmfluid pd5p">
+                                    <h4 class="txt_center">Order Nr.: 17857</h4>
+                                    <div class="invoice" style="border:1px solid #ccc;border-radius: 10px;padding: 20px;">
+                                        <div class="container">
+                                            <div class="fl-box18">
+                                                <div>NAME FIRMA merchant</div>
+                                                <div>ADDRESS</div>
+                                                <div>TEL</div>
+                                                <div>FAX</div>
+                                                <div>IBAN</div>
+                                                <div>tax number</div>
+                                            </div>
+                                            <div class="fl-box18 txt_right">
+                                                <div>NAME FIRMA customer</div>
+                                                <div>ADDRESS</div>
+                                                <div>TEL</div>
+                                                <div>FAX</div>
+                                                <div>IBAN</div>
+                                                <div>tax number</div>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="fc-box txt_center">
+                                                <h4>INVOICE<br><small>Nr.: 17857 / 01.01.2011</small></h4>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <table class="table" style="width:80%;margin: auto;">
+                                        <tr>
+                                            <th style="text-align: left;">#</th>
+                                            <th style="text-align: left;">Product</th>
+                                            <th>Unit price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">2</td>
+                                            <td style="text-align:right;">71.98 EUR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">1</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nike Hyper Quickness Mens Basketball Boots SD-15108144</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                            <td style="text-align:center;">1</td>
+                                            <td style="text-align:right;">35.99 EUR</td>
+                                        </tr>
+                                    </table>
+                                            <div style="text-align: right;padding: 20px 0;width: 80%;margin: auto;">
+                                                <div>Delivery: 5.99 EUR</div>
+                                                <div>Discount(0%): 0.00 EUR</div>
+                                                <div>VAT(19%): 0.00 EUR</div>
+                                                <div><b class="txt_overline">TOTAL: 149.95 EUR</b></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container txt_center pd10">
+                                        <input class="button_success radius5" style="padding:5px 20px" type="submit" name="shop" value="Go in shop">
+                                        <input class="button_success radius5" style="padding:5px 20px" type="submit" name="print" value="print">
+                                    </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;hr style="border: 3px solid #000;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid #000; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: #fff;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container payment__process" style="text-align:center;height: 20px;display: inline-block;letter-spacing: 0;font-size: 0;"&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;background: green;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+
+    &lt;hr style="border: 3px solid green;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;span class="process__point" style="border: 3px solid green; border-radius: 100%;height: 20px;width: 20px;display: inline-block;background: green;"&gt;&lt;/span&gt;
+    &lt;hr style="border: 3px solid transparent;width: 5%;display: inline-block;margin-bottom: 7px;"&gt;
+    &lt;br&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Shopping Cart&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Payment Method&lt;/span&gt;
+    &lt;span class="process__point hidden-mobile" style="display: inline-block;width: 10%;"&gt;Completed&lt;/span&gt;
+    &lt;span class="process__pointname hidden-mobile" style="display: inline-block;width: 10%;"&gt;Invoice&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+    &lt;div class="fc-box24 pmfluid pd5p"&gt;
+        &lt;h4 class="txt_center"&gt;Order Nr.: 17857&lt;/h4&gt;
+        &lt;div class="invoice" style="border:1px solid #ccc;border-radius: 10px;padding: 20px;"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="fl-box18"&gt;
+                    &lt;div&gt;NAME FIRMA merchant&lt;/div&gt;
+                    &lt;div&gt;ADDRESS&lt;/div&gt;
+                    &lt;div&gt;TEL&lt;/div&gt;
+                    &lt;div&gt;FAX&lt;/div&gt;
+                    &lt;div&gt;IBAN&lt;/div&gt;
+                    &lt;div&gt;tax number&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="fl-box18 txt_right"&gt;
+                    &lt;div&gt;NAME FIRMA customer&lt;/div&gt;
+                    &lt;div&gt;ADDRESS&lt;/div&gt;
+                    &lt;div&gt;TEL&lt;/div&gt;
+                    &lt;div&gt;FAX&lt;/div&gt;
+                    &lt;div&gt;IBAN&lt;/div&gt;
+                    &lt;div&gt;tax number&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="fc-box txt_center"&gt;
+                    &lt;h4&gt;INVOICE&lt;br&gt;&lt;small&gt;Nr.: 17857 / 01.01.2011&lt;/small&gt;&lt;/h4&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="container"&gt;
+                &lt;table class="table" style="width:80%;margin: auto;"&gt;
+            &lt;tr&gt;
+                &lt;th style="text-align: left;"&gt;#&lt;/th&gt;
+                &lt;th style="text-align: left;"&gt;Product&lt;/th&gt;
+                &lt;th&gt;Unit price&lt;/th&gt;
+                &lt;th&gt;Quantity&lt;/th&gt;
+                &lt;th&gt;Total&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;2&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;71.98 EUR&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;1&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Nike Hyper Quickness Mens Basketball Boots SD-15108144&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+                &lt;td style="text-align:center;"&gt;1&lt;/td&gt;
+                &lt;td style="text-align:right;"&gt;35.99 EUR&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+                &lt;div style="text-align: right;padding: 20px 0;width: 80%;margin: auto;"&gt;
+                    &lt;div&gt;Delivery: 5.99 EUR&lt;/div&gt;
+                    &lt;div&gt;Discount(0%): 0.00 EUR&lt;/div&gt;
+                    &lt;div&gt;VAT(19%): 0.00 EUR&lt;/div&gt;
+                    &lt;div&gt;&lt;b class="txt_overline"&gt;TOTAL: 149.95 EUR&lt;/b&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="container txt_center pd10"&gt;
+            &lt;input class="button_success radius5" style="padding:5px 20px" type="submit" name="shop" value="Go in shop"&gt;
+            &lt;input class="button_success radius5" style="padding:5px 20px" type="submit" name="print" value="print"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <hr>
+                            <div class="container">
+                                <h3>Payment Example 6<br/>(Order Status)</h3>
+                                <img class="thumbnail" src="img/sample/payment/order_status1.png" alt="image">
+                                <div class="fc-box24">
+                                <div class="container" style="">
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Lieferung erfolgreich<br>2019-05-11
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Versand local Spedition<br>2019-05-08
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Ursprungsland verlassen <br>2019-05-04
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Sendung von der Fluggesellschaft akzeptiert<br>2019-05-02
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Sendung hat Lager im Ursprungsland verlassen <br>2019-05-01
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            <div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"></div>
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Sendung im Lager im Ursprungsland<br>2019-04-30
+                                        </div>
+                                    </div>
+                                    <div class="fl-box36" style="">
+                                        <div class="fl-box2 txt_center">
+                                            <div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"></div>
+                                            
+                                        </div>
+                                        <div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;">
+                                            <div style="float: left;border: 10px solid transparent;border-left-color: #000;"></div>
+                                            Sendung versandt<br>2019-04-30
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+<pre>Code:<code>
+&lt;div class="container"&gt;
+    &lt;h3&gt;Payment Example 6&lt;br/&gt;(Order Status)&lt;/h3&gt;
+    &lt;img class="thumbnail" src="img/sample/payment/order_status1.png" alt="image"&gt;
+    &lt;div class="fc-box24"&gt;
+    &lt;div class="container" style=""&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Lieferung erfolgreich&lt;br&gt;2019-05-11
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Versand local Spedition&lt;br&gt;2019-05-08
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Ursprungsland verlassen &lt;br&gt;2019-05-04
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Sendung von der Fluggesellschaft akzeptiert&lt;br&gt;2019-05-02
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Sendung hat Lager im Ursprungsland verlassen &lt;br&gt;2019-05-01
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+                &lt;div style="height: 30px;border:1px solid #000;margin: auto;width: 0;"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Sendung im Lager im Ursprungsland&lt;br&gt;2019-04-30
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="fl-box36" style=""&gt;
+            &lt;div class="fl-box2 txt_center"&gt;
+                &lt;div style="background: #000;height: 20px;border:1px solid #000;margin: auto;width: 20px;margin-top: -10px;"&gt;&lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class="fl-box34" style="margin-top: -10px;height: 50px;overflow: hidden;"&gt;
+                &lt;div style="float: left;border: 10px solid transparent;border-left-color: #000;"&gt;&lt;/div&gt;
+                Sendung versandt&lt;br&gt;2019-04-30
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </section>
+                    <div class="clean"></div>
+                    </div>
+            
+                </div>
+            
+            <div class="clean"></div>
+            </div>
+            
+        </div>
+            
+        <div id="chr" style=""><div class="clean"></div></div>
+        <div id="copyright"  style="z-index: 500;">
+            <div style="background:#ECEFF1;text-align: center;font-size:10px">
+                Copyright (c) 2011-2019
+            </div>
+        </div>  
+        <script src="js/fxxxf_xwxxcx.js"></script>  
+    </body>
+</html>
